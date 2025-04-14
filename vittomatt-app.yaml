@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://vittomatt.github.io/rpi-charts/
     chart: vittomatt
-    targetRevision: 20250414-1600-2eeae27
+    targetRevision: 20250414-0414-<nuevo-VERSION_TAG>
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -18,3 +18,5 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+      - Force=true
+      - PruneLast=true

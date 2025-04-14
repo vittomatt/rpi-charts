@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   vittomatt:
   - apiVersion: v2
+    appVersion: 20250414-1428-a3c99ce
+    created: "2025-04-14T14:36:51.646638094Z"
+    description: A Helm chart for Kubernetes
+    digest: 51510de9a9b5cf4f66c636353c70a183f69e1470e61e812c058ba9db7048a99c
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/vittomatt-20250414-1428-a3c99ce.tgz
+    version: 20250414-1428-a3c99ce
+  - apiVersion: v2
     appVersion: 20250414-1416-46ed4ad
-    created: "2025-04-14T14:25:35.785784284Z"
+    created: "2025-04-14T14:36:51.646438171Z"
     description: A Helm chart for Kubernetes
     digest: 35c5ea98ed6a3d4c360b8c60efcbc700681bc2897a8b9cb0e6688d405a3b76cb
     name: vittomatt
@@ -13,7 +23,7 @@ entries:
     version: 20250414-1416-46ed4ad
   - apiVersion: v2
     appVersion: 20250414-0414-172d7c2
-    created: "2025-04-14T14:25:35.785556297Z"
+    created: "2025-04-14T14:36:51.646221528Z"
     description: A Helm chart for Kubernetes
     digest: a8a13d7dbab7e881b43b7b5521f1785d592026645f1e48c0418c8d6c7c961c85
     name: vittomatt
@@ -23,7 +33,7 @@ entries:
     version: 20250414-0414-172d7c2
   - apiVersion: v2
     appVersion: 20250413-1832-8797cf1
-    created: "2025-04-14T14:25:35.785285289Z"
+    created: "2025-04-14T14:36:51.645965782Z"
     description: A Helm chart for Kubernetes
     digest: dc4f4c485df7a5c3c8f9c3a54859b3c149b8eca6ab88d44182a4736a0017514f
     name: vittomatt
@@ -33,7 +43,7 @@ entries:
     version: 20250413-1832-8797cf1
   - apiVersion: v2
     appVersion: 20250413-1705-94c3470
-    created: "2025-04-14T14:25:35.785053935Z"
+    created: "2025-04-14T14:36:51.645764738Z"
     description: A Helm chart for Kubernetes
     digest: bd1477161bbb455ba1f4154b27592176e9da6c9867f5776d880cbbf74c515542
     name: vittomatt
@@ -43,7 +53,7 @@ entries:
     version: 20250413-1705-94c3470
   - apiVersion: v2
     appVersion: 20250413-1648-6c907da
-    created: "2025-04-14T14:25:35.784862146Z"
+    created: "2025-04-14T14:36:51.645576868Z"
     description: A Helm chart for Kubernetes
     digest: 3b7c19cd2844d9e2fa14b904bc60789a969967fbebaceee5acca913b9eefde85
     name: vittomatt
@@ -53,7 +63,7 @@ entries:
     version: 20250413-1648-6c907da
   - apiVersion: v2
     appVersion: 20250413-1611-36c96c6
-    created: "2025-04-14T14:25:35.784655728Z"
+    created: "2025-04-14T14:36:51.645407062Z"
     description: A Helm chart for Kubernetes
     digest: 7e3755d2ae7e5b80f576f0329c13af41d450bf6beb703791bc7f9a5b90523d53
     name: vittomatt
@@ -63,7 +73,7 @@ entries:
     version: 20250413-1611-36c96c6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-14T14:25:35.784452066Z"
+    created: "2025-04-14T14:36:51.645212269Z"
     description: A Helm chart for Kubernetes
     digest: d629d6746f03a4c2977a8ce7cd2fcc5282a290c6d6c070032eb27ae31ed4e69c
     name: vittomatt
@@ -71,4 +81,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/vittomatt-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-14T14:25:35.784087433Z"
+generated: "2025-04-14T14:36:51.64489036Z"

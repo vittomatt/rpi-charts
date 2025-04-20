@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vittomatt
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://vittomatt.github.io/rpi-charts
+    chart: vittomatt
+    targetRevision: 0.0.0  # Auto updated by ci
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

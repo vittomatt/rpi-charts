@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   vittomatt:
   - apiVersion: v2
-    appVersion: 20250420-1441-a70bf6d
-    created: "2025-04-20T17:19:51.828824752-03:00"
+    appVersion: 20250420-2030-58d981c
+    created: "2025-04-20T20:39:03.293455281Z"
     description: Vittomatt Chart
-    digest: 9b0da3dc1edeb675a563e6f5136ab145611ae59205c336415ee036a1ea80eb1c
+    digest: 7c42df44271dd9d113d46495ae3f05e44f576997fdbcb7b2c3bfb6154209f762
     name: vittomatt
     type: application
     urls:
-    - https://vittomatt.github.io/rpi-charts/vittomatt-20250420-1441-a70bf6d.tgz
-    version: 20250420-1441-a70bf6d
-generated: "2025-04-20T17:19:51.828123901-03:00"
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt-20250420-2030-58d981c.tgz
+    version: 20250420-2030-58d981c
+generated: "2025-04-20T20:39:03.293079228Z"

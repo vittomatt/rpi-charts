@@ -9,7 +9,7 @@ spec:
     repoURL: https://vittomatt.github.io/rpi-charts
     chart: vittomatt
     # Auto updatede by ci
-    targetRevision: 20250422-0108-2b21da2
+    targetRevision: 20250422-2044-0e132ad
   destination:
     server: https://kubernetes.default.svc
     namespace: default

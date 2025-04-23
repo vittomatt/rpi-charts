@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   vittomatt:
   - apiVersion: v2
+    appVersion: 20250423-0019-5d87236
+    created: "2025-04-23T00:28:04.541473711Z"
+    description: Vittomatt Chart
+    digest: 7e8a6954b99061ae3f3f733a690a94dbc11381c766e20a09f8e5444301714513
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt-20250423-0019-5d87236.tgz
+    version: 20250423-0019-5d87236
+  - apiVersion: v2
     appVersion: 20250422-2044-0e132ad
-    created: "2025-04-22T20:53:35.818996751Z"
+    created: "2025-04-23T00:28:04.541265966Z"
     description: Vittomatt Chart
     digest: 94b1b9d1aadeb3ae382d2a2805b92836c2994c68d7e4a3be474a23caad73afb3
     name: vittomatt
@@ -13,7 +23,7 @@ entries:
     version: 20250422-2044-0e132ad
   - apiVersion: v2
     appVersion: 20250422-0108-2b21da2
-    created: "2025-04-22T20:53:35.818805964Z"
+    created: "2025-04-23T00:28:04.541067026Z"
     description: Vittomatt Chart
     digest: a832abe14e6790eedc36e205bcc9a930888530ff7626763c29a080fa165a0ec6
     name: vittomatt
@@ -23,7 +33,7 @@ entries:
     version: 20250422-0108-2b21da2
   - apiVersion: v2
     appVersion: 20250422-0022-ca59fb9
-    created: "2025-04-22T20:53:35.818608564Z"
+    created: "2025-04-23T00:28:04.540840947Z"
     description: Vittomatt Chart
     digest: 0bec1c792d11d2725af2245260ecb4f0afb3ed7886eac43910859a0ef2104a7e
     name: vittomatt
@@ -33,7 +43,7 @@ entries:
     version: 20250422-0022-ca59fb9
   - apiVersion: v2
     appVersion: 20250422-0005-1a826b6
-    created: "2025-04-22T20:53:35.818411816Z"
+    created: "2025-04-23T00:28:04.540644292Z"
     description: Vittomatt Chart
     digest: 0d2cb45d07b5354aefbadcb51b7791c587df6eb8cd76d8ac24d16277b012460d
     name: vittomatt
@@ -43,7 +53,7 @@ entries:
     version: 20250422-0005-1a826b6
   - apiVersion: v2
     appVersion: 20250421-2337-a6de38c
-    created: "2025-04-22T20:53:35.818178128Z"
+    created: "2025-04-23T00:28:04.540425576Z"
     description: Vittomatt Chart
     digest: ea5995450310321122869d800ba6a99b507088e769b3f36e5644963fa5da19e7
     name: vittomatt
@@ -53,7 +63,7 @@ entries:
     version: 20250421-2337-a6de38c
   - apiVersion: v2
     appVersion: 20250420-2213-f202d55
-    created: "2025-04-22T20:53:35.817939772Z"
+    created: "2025-04-23T00:28:04.540210908Z"
     description: Vittomatt Chart
     digest: 421fc52088cf52421c4c9a2c32e39f4b0a4403de586f3c87885bb4ccce1eae6b
     name: vittomatt
@@ -63,7 +73,7 @@ entries:
     version: 20250420-2213-f202d55
   - apiVersion: v2
     appVersion: 20250420-2200-cb462d1
-    created: "2025-04-22T20:53:35.817697468Z"
+    created: "2025-04-23T00:28:04.539988535Z"
     description: Vittomatt Chart
     digest: 3092c42c4685ce239496b75ce1c552c516c01df56224cfa38c6c8377e697333e
     name: vittomatt
@@ -73,7 +83,7 @@ entries:
     version: 20250420-2200-cb462d1
   - apiVersion: v2
     appVersion: 20250420-2148-82b4797
-    created: "2025-04-22T20:53:35.817408287Z"
+    created: "2025-04-23T00:28:04.539700651Z"
     description: Vittomatt Chart
     digest: 62ac2587efffcec85c651942f5f3df61184908416d797a47fecbdd50cfd21921
     name: vittomatt
@@ -83,7 +93,7 @@ entries:
     version: 20250420-2148-82b4797
   - apiVersion: v2
     appVersion: 20250420-2104-51f1017
-    created: "2025-04-22T20:53:35.817150885Z"
+    created: "2025-04-23T00:28:04.539418186Z"
     description: Vittomatt Chart
     digest: 10e1a10240c7b05918376495500f5b0da8a97864e23f43e07e3dc019f625c0f7
     name: vittomatt
@@ -93,7 +103,7 @@ entries:
     version: 20250420-2104-51f1017
   - apiVersion: v2
     appVersion: 20250420-2043-1ca6674
-    created: "2025-04-22T20:53:35.816933077Z"
+    created: "2025-04-23T00:28:04.539177069Z"
     description: Vittomatt Chart
     digest: d4202ef72dd26915080254ba98a5df2b035b3fbb7866cd8c5ff3b87d149d6b10
     name: vittomatt
@@ -103,7 +113,7 @@ entries:
     version: 20250420-2043-1ca6674
   - apiVersion: v2
     appVersion: 20250420-2030-58d981c
-    created: "2025-04-22T20:53:35.816698488Z"
+    created: "2025-04-23T00:28:04.53889732Z"
     description: Vittomatt Chart
     digest: 7c42df44271dd9d113d46495ae3f05e44f576997fdbcb7b2c3bfb6154209f762
     name: vittomatt
@@ -111,4 +121,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt-20250420-2030-58d981c.tgz
     version: 20250420-2030-58d981c
-generated: "2025-04-22T20:53:35.816275957Z"
+generated: "2025-04-23T00:28:04.538515591Z"

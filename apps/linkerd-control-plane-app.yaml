@@ -9,6 +9,54 @@ spec:
     repoURL: https://helm.linkerd.io/edge
     chart: linkerd-control-plane
     targetRevision: 2025.4.4
+    helm:
+      values: |
+        global:
+          identityTrustAnchorsPEM: |
+            -----BEGIN CERTIFICATE-----
+            MIIBlTCCATygAwIBAgIRAJ4VRQq+B8w+1WSh/+qHDk0wCgYIKoZIzj0EAwIwKTEn
+            MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
+            MzEzMjUyNFoXDTM1MDQyMTEzMjUyNFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+            a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJJej
+            uYdBO+D9F8/cao5k//P0RwIIBCDIg0jBMC1Oxfr/2POampH8K7r2Thr0ju6br6Y5
+            A6gtA6FBBCLE1bOV1KNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+            Af8CAQEwHQYDVR0OBBYEFE5MYvMeSy39fmZ8ivF0ZgrJVDHoMAoGCCqGSM49BAMC
+            A0cAMEQCICSWOMJF9tZe5FdDdOQMOhvnHmEe/jsL6msxw+/i3Gca0yAiA2gIl8KWEccc
+            T658l64Z2WF36EYlYeMIYYE95heas3eCBw==
+            -----END CERTIFICATE-----
+        identity:
+          trustAnchorsPEM: |
+            -----BEGIN CERTIFICATE-----
+            MIIBlTCCATygAwIBAgIRAJ4VRQq+B8w+1WSh/+qHDk0wCgYIKoZIzj0EAwIwKTEn
+            MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
+            MzEzMjUyNFoXDTM1MDQyMTEzMjUyNFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+            a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJJej
+            uYdBO+D9F8/cao5k//P0RwIIBCDIg0jBMC1Oxfr/2POampH8K7r2Thr0ju6br6Y5
+            A6gtA6FBBCLE1bOV1KNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+            Af8CAQEwHQYDVR0OBBYEFE5MYvMeSy39fmZ8ivF0ZgrJVDHoMAoGCCqGSM49BAMC
+            A0cAMEQCICSWOMJF9tZe5FdDdOQMOhvnHmEe/jsL6msxw+/i3Gca0yAiA2gIl8KWEccc
+            T658l64Z2WF36EYlYeMIYYE95heas3eCBw==
+            -----END CERTIFICATE-----
+          issuer:
+            tls:
+              crtPEM: |
+                -----BEGIN CERTIFICATE-----
+                MIIBljCCATygAwIBAgIRAL0t4NdEKMAZz4XNT9cdapkwCgYIKoZIzj0EAwIwKTEn
+                MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
+                MzEzMjUzMFoXDTI2MDQyMzEzMjUzMFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+                a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3J/E
+                uk2WYGoscUtigskWXondZyanAgLPlXjkg1eE2x5oZvGeaE2WGfZeYQqsqPcOMD10
+                cTC7Ad5hiX2L/1AP4qNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+                Af8CAQAwHQYDVR0OBBYEFGfY0orR2ufAgU3hDfGWB355J5wlMAoGCCqGSM49BAMC
+                A0gAMEUCIQDa2jO6c7dAJoZYYXmBk3jqlBQlVYAXrCjwc5J+STFqCgIgWEetOv84
+                o5UmMfxr5jRhrGPUf7ANm4i+BgOu4IfzHfc=
+                -----END CERTIFICATE-----
+              keyPEM: |
+                -----BEGIN EC PRIVATE KEY-----
+                MHcCAQEEIIntj9ji0g/WXSXWAU5h3tT+QaKpMTQDLRY3zKpZ0a/soAoGCCqGSM49
+                AwEHoUQDQgAE3J/Euk2WYGoscUtigskWXondZyanAgLPlXjkg1eE2x5oZvGeaE2W
+                GfZeYQqsqPcOMD10cTC7Ad5hiX2L/1AP4g==
+                -----END EC PRIVATE KEY-----
   destination:
     server: https://kubernetes.default.svc
     namespace: linkerd

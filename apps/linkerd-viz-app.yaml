@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://helm.linkerd.io/stable
+    repoURL: https://helm.linkerd.io/edge
     chart: linkerd-viz
-    targetRevision: 30.10.3
+    targetRevision: 2025.4.4
   destination:
     server: https://kubernetes.default.svc
     namespace: linkerd-viz
   syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
-  dependencies:
-    - name: linkerd-control-plane

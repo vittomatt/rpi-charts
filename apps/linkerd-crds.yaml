@@ -14,7 +14,7 @@ spec:
     namespace: linkerd
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true

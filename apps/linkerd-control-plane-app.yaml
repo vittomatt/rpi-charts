@@ -10,34 +10,25 @@ spec:
     chart: linkerd-control-plane
     targetRevision: 2025.4.4
     helm:
-      values: |
-        global:
-          identityTrustAnchorsPEM: |
-            -----BEGIN CERTIFICATE-----
-            MIIBlTCCATygAwIBAgIRAJ4VRQq+B8w+1WSh/+qHDk0wCgYIKoZIzj0EAwIwKTEn
-            MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
-            MzEzMjUyNFoXDTM1MDQyMTEzMjUyNFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
-            a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJJej
-            uYdBO+D9F8/cao5k//P0RwIIBCDIg0jBMC1Oxfr/2POampH8K7r2Thr0ju6br6Y5
-            A6gtA6FBBCLE1bOV1KNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
-            Af8CAQEwHQYDVR0OBBYEFE5MYvMeSy39fmZ8ivF0ZgrJVDHoMAoGCCqGSM49BAMC
-            A0cAMEQCICSWOMJF9tZe5FdDdOQMOhvnHmEe/jsL6msxw+/i3Gca0yAiA2gIl8KWEccc
-            T658l64Z2WF36EYlYeMIYYE95heas3eCBw==
-            -----END CERTIFICATE-----
+      values: |-
+        # --- TRUST ANCHOR (cluster CA) ---
+        identityTrustAnchorsPEM: |
+          -----BEGIN CERTIFICATE-----
+          MIIBlTCCATygAwIBAgIRAJ4VRQq+B8w+1WSh/+qHDk0wCgYIKoZIzj0EAwIwKTEn
+          MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
+          MzEzMjUyNFoXDTM1MDQyMTEzMjUyNFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+          a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJJej
+          uYdBO+D9F8/cao5k//P0RwIIBCDIg0jBMC1Oxfr/2POampH8K7r2Thr0ju6br6Y5
+          A6gtA6FBBCLE1bOV1KNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+          Af8CAQEwHQYDVR0OBBYEFE5MYvMeSy39fmZ8ivF0ZgrJVDHoMAoGCCqGSM49BAMC
+          A0cAMEQCICSWOMJF9tZe5FdDdOQMOhvnHmEe/jsL6msxw+/i3Gca0yAiA2gIl8KW
+          EcccT658l64Z2WF36EYlYeMIYYE95heas3eCBw==
+          -----END CERTIFICATE-----
+
+        # --- ISSUER cert & key ---
         identity:
-          trustAnchorsPEM: |
-            -----BEGIN CERTIFICATE-----
-            MIIBlTCCATygAwIBAgIRAJ4VRQq+B8w+1WSh/+qHDk0wCgYIKoZIzj0EAwIwKTEn
-            MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
-            MzEzMjUyNFoXDTM1MDQyMTEzMjUyNFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
-            a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJJej
-            uYdBO+D9F8/cao5k//P0RwIIBCDIg0jBMC1Oxfr/2POampH8K7r2Thr0ju6br6Y5
-            A6gtA6FBBCLE1bOV1KNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
-            Af8CAQEwHQYDVR0OBBYEFE5MYvMeSy39fmZ8ivF0ZgrJVDHoMAoGCCqGSM49BAMC
-            A0cAMEQCICSWOMJF9tZe5FdDdOQMOhvnHmEe/jsL6msxw+/i3Gca0yAiA2gIl8KWEccc
-            T658l64Z2WF36EYlYeMIYYE95heas3eCBw==
-            -----END CERTIFICATE-----
           issuer:
+            scheme: linkerd.io/tls
             tls:
               crtPEM: |
                 -----BEGIN CERTIFICATE-----
@@ -62,7 +53,7 @@ spec:
     namespace: linkerd
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true

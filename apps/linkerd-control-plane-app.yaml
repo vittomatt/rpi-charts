@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://helm.linkerd.io/edge
     chart: linkerd-control-plane
-    targetRevision: 20250425-0005-6b029f5
+    targetRevision: 2025.4.4
     helm:
       values: |-
         # ------------------------------------------------------------------

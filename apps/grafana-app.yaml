@@ -19,6 +19,9 @@ spec:
           enabled: false
         adminUser: admin
         adminPassword: admin
+        service:
+          type: NodePort
+          nodePort: 32000
         resources:
           requests:
             cpu: 50m

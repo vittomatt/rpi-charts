@@ -3,15 +3,19 @@ kind: Application
 metadata:
   name: redis
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
   project: default
   source:
-    repoURL: oci://registry-1.docker.io/bitnamicharts
+    repoURL: https://charts.bitnami.com/bitnami
     chart: redis
-    targetRevision: 20.13.0
+    targetRevision: 19.5.0
     helm:
+      releaseName: redis
       values: |-
         architecture: standalone
+
         auth:
           enabled: true
           password: "vittomatt"

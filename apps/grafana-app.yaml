@@ -17,8 +17,8 @@ spec:
         replicaCount: 1
         persistence:
           enabled: false
-        adminUser: admin
-        adminPassword: admin
+        admin:
+          existingSecret: grafana-credentials
         service:
           type: NodePort
           nodePort: 32000

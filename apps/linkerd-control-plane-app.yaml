@@ -11,8 +11,47 @@ spec:
     targetRevision: 2025.4.4
     helm:
       values: |-
+        # ------------------------------------------------------------------
+        # TRUST ANCHOR  (ca.crt)
+        # ------------------------------------------------------------------
+        identityTrustAnchorsPEM: |
+          -----BEGIN CERTIFICATE-----
+          MIIBlDCCATugAwIBAgIQPGKNMskM7BJX8iTGb0VAtzAKBggqhkjOPQQDAjApMScw
+          JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjUwNDI0
+          MjA0MDEzWhcNMzUwNDIyMjA0MDEzWjApMScwJQYDVQQDEx5pZGVudGl0eS5saW5r
+          ZXJkLmNsdXN0ZXIubG9jYWwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAT30sHj
+          bYgJIlO8qOnshrVE0VNFPZPQOw4MFCCxnnRIKE3wRhhenw83XCSZQ6zzJ9aJcv7T
+          kXbbNlbCULX9cj4Wo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB
+          /wIBATAdBgNVHQ4EFgQU+S6tvnlTqbIAkyflQbESvrcMrZswCgYIKoZIzj0EAwID
+          RwAwRAIgP+w/c+kMKp3xG6x02JQXOi70b2wtUqVuiH1C9dgLZnkCIGEZDDTiEISQ
+          q+rPzGG5zvL56QCVif9w/PzssuifEsks
+          -----END CERTIFICATE-----
+
+        # ------------------------------------------------------------------
+        # ISSUER CERT + KEY   (issuer.crt / issuer.key)
+        # ------------------------------------------------------------------
         identity:
-          externalCA: true
+          issuer:
+            scheme: linkerd.io/tls
+            tls:
+              crtPEM: |
+                -----BEGIN CERTIFICATE-----
+                MIIBlzCCATygAwIBAgIRAL9Mek4Ia3Iuxl1YDfjDA7IwCgYIKoZIzj0EAwIwKTEn
+                MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTI1MDQy
+                NDIwNDAyMloXDTI2MDQyNDIwNDAyMlowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+                a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEiSNI
+                ph5cp0pfLrCgEfVdTyZQcIxF3pJFM53nL1vt3aId1ObPtjKmlHl8KteJQyyNJ+Ai
+                Z+voJhdkfdavLPXyd6NFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+                Af8CAQAwHQYDVR0OBBYEFG/I7T8k8JJa/0vrh5AIkXjr/nrHMAoGCCqGSM49BAMC
+                A0kAMEYCIQDk24AJ/Q6ChcQVFHb/c2up0723p2bVbTom6j2ipRVxtwIhALDNbkxw
+                QgY8dmL2MJjC43lNf8nC+AMD6b2Fnr7SR9tV
+                -----END CERTIFICATE-----
+              keyPEM: |
+                -----BEGIN EC PRIVATE KEY-----
+                MHcCAQEEIGME/c/vc9pAn7hcGD8G0e+sU/ugINOqbVk1xc0t3mfFoAoGCCqGSM49
+                AwEHoUQDQgAEiSNIph5cp0pfLrCgEfVdTyZQcIxF3pJFM53nL1vt3aId1ObPtjKm
+                lHl8KteJQyyNJ+AiZ+voJhdkfdavLPXydw==
+                -----END EC PRIVATE KEY-----
   destination:
     server: https://kubernetes.default.svc
     namespace: linkerd

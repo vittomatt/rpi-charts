@@ -18,16 +18,10 @@ spec:
 
         auth:
           enabled: true
-          password: "vittomatt"
+          existingSecret: redis-auth
+          existingSecretPasswordKey: redis-password
           acl:
             enabled: true
-            users:
-              - username: "vittomatt"
-                password: "vittomatt"
-                commands: "+@all"
-                keys: "~*"
-                channels: "&*"
-                enabled: "on"
 
         master:
           persistence:

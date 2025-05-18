@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: videomatt-videos-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://vittomatt.github.io/rpi-charts
+    chart: videomatt-videos
+    # Auto updated by ci
+    targetRevision: 20250518-1559-6f883b8
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vittospace
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

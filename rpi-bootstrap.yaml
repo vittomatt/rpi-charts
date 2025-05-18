@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: vittomatt-bootstrap
+  name: rpi-bootstrap
   namespace: argocd
 spec:
   project: default

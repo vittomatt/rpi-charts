@@ -1,5 +1,27 @@
 apiVersion: v1
 entries:
+  videomatt-users:
+  - apiVersion: v2
+    appVersion: 20250518-1712-58e3d19
+    created: "2025-05-18T17:24:12.572663475Z"
+    description: Videomatt Users Chart
+    digest: 74f2ef2d8e5f55da3d9eba6a5fed774cc7acdaa702a1094a8439ba7250f54e18
+    name: videomatt-users
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-1712-58e3d19.tgz
+    version: 20250518-1712-58e3d19
+  videomatt-videos:
+  - apiVersion: v2
+    appVersion: 20250518-1712-58e3d19
+    created: "2025-05-18T17:24:12.572872575Z"
+    description: Videomatt Videos Chart
+    digest: ee3f8d7c017e3119c8e457eb412bdefec8bd745534a088cd5550ee36a137a7c5
+    name: videomatt-videos
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-1712-58e3d19.tgz
+    version: 20250518-1712-58e3d19
   vittomatt:
   - apiVersion: v2
     appVersion: 20250518-1638-a367f7b
@@ -81,4 +103,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-05-18T17:14:22.459918649Z"
+generated: "2025-05-18T17:24:12.57235534Z"

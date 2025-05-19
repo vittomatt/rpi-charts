@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: videomatt-users-postgres-shard-1
+  name: videomatt-videos-postgres
   namespace: argocd
 spec:
   project: default
@@ -10,21 +10,45 @@ spec:
     chart: postgresql
     targetRevision: 13.2.25
     helm:
-      releaseName: postgres-shard-1
+      releaseName: postgres-videos
       values: |-
+        image:
+          repository: bitnami/postgresql
+          tag: 15.3.0
+          debug: true
+
         auth:
           username: videomatt
           password: password
-          database: users
-          existingSecret: ""
+          database: videos
+          replicationUsername: videomatt
+          replicationPassword: password
+
+        architecture: replication
 
         primary:
+          service:
+            ports:
+              postgresql: 5432
           persistence:
             enabled: true
             size: 1Gi
             storageClass: ""
           podAnnotations:
             linkerd.io/inject: "disabled"
+
+        readReplicas:
+          replicaCount: 1
+          podAnnotations:
+            linkerd.io/inject: "disabled"
+          persistence:
+            enabled: true
+            size: 1Gi
+            storageClass: ""
+
+        volumePermissions:
+          enabled: true
+
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace

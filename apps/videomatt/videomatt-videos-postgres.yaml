@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
 spec:
   project: default
+
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: postgresql
@@ -14,37 +15,26 @@ spec:
       values: |-
         image:
           repository: bitnami/postgresql
-          tag: 15.7.0-debian-12-r12
+          tag: 17.3.0-debian-12-r4
           debug: true
 
         auth:
           username: videomatt
           password: password
           database: videos
-          replicationUsername: videomatt
+          replicationUsername: videomatt-replica
           replicationPassword: password
 
         architecture: replication
 
         primary:
-          service:
-            ports:
-              postgresql: 5432
           persistence:
-            enabled: true
-            size: 1Gi
-            storageClass: ""
-          podAnnotations:
-            linkerd.io/inject: "disabled"
+            enabled: false
 
         readReplicas:
           replicaCount: 1
-          podAnnotations:
-            linkerd.io/inject: "disabled"
           persistence:
-            enabled: true
-            size: 1Gi
-            storageClass: ""
+            enabled: false
 
         volumePermissions:
           enabled: true
@@ -52,6 +42,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace
+
   syncPolicy:
     automated:
       prune: true

@@ -1,0 +1,36 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: videomatt-postgres-shard-2
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: postgresql
+    targetRevision: 13.2.25
+    helm:
+      releaseName: postgres-shard-2
+      values: |-
+        auth:
+          username: videomatt
+          password: password
+          database: users
+          existingSecret: ""
+
+        primary:
+          persistence:
+            enabled: true
+            size: 1Gi
+            storageClass: ""
+          podAnnotations:
+            linkerd.io/inject: "disabled"
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vittospace
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

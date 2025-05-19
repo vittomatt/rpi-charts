@@ -18,8 +18,8 @@ spec:
 
         auth:
           enabled: true
-          existingSecret: redis-auth
-          existingSecretPasswordKey: redis-password
+          existingSecret: vittomatt-secret
+          existingSecretPasswordKey: REDIS_PASSWORD
           acl:
             enabled: true
 

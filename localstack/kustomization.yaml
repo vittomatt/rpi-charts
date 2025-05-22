@@ -1,0 +1,3 @@
+resources:
+  - videomatt-localstack-deployment.yaml
+  - videomatt-localstack-service.yaml

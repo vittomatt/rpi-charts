@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: videomatt-localstack
+  namespace: vittospace
+spec:
+  selector:
+    app: videomatt-localstack
+  type: ClusterIP
+  ports:
+    - name: edge
+      port: 4566
+      targetPort: 4566

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: videomatt-localstack
+  namespace: vittospace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: videomatt-localstack
+  template:
+    metadata:
+      labels:
+        app: videomatt-localstack
+    spec:
+      containers:
+        - name: localstack
+          image: localstack/localstack:latest
+          ports:
+            - containerPort: 4566
+          env:
+            - name: SERVICES
+              value: "events,sqs,sns"
+            - name: DEBUG
+              value: "true"
+          volumeMounts:
+            - name: localstack-data
+              mountPath: /var/lib/localstack
+      volumes:
+        - name: localstack-data
+          emptyDir: {}

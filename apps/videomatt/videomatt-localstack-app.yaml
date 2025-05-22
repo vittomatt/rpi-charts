@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: videomatt-localstack
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/vittomatt/rpi-manifests
+    targetRevision: HEAD
+    path: localstack
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vittospace
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true

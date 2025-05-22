@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: videomatt-localstack-init-scripts
+  namespace: vittospace
+data:
+  20-bootstrap.sh: |
+    #!/usr/bin/env bash
+    # Exit on first error, undefined var, or pipe failure
+    set -euo pipefail
+
+    REGION="us-east-1"
+
+    # ---------- SQS: users ----------
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_users_1_event_user_created_dlq || true
+
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_users_1_event_user_created_retry \
+      --attributes '{"RedrivePolicy":"{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_users_1_event_user_created_dlq\",\"maxReceiveCount\":\"3\"}"}' || true
+
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_users_1_event_user_created \
+      --attributes '{"RedrivePolicy":"{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_users_1_event_user_created_retry\",\"maxReceiveCount\":\"1\"}"}' || true
+
+    # ---------- SQS: videos ----------
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_videos_1_event_video_created_dlq || true
+
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_videos_1_event_video_created_retry \
+      --attributes '{"RedrivePolicy":"{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_videos_1_event_video_created_dlq\",\"maxReceiveCount\":\"3\"}"}' || true
+
+    awslocal sqs create-queue --region $REGION \
+      --queue-name videomatt_videos_1_event_video_created \
+      --attributes '{"RedrivePolicy":"{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_videos_1_event_video_created_retry\",\"maxReceiveCount\":\"1\"}"}' || true
+
+    # ---------- SNS ----------
+    awslocal sns create-topic --region $REGION \
+      --name videomatt_videos > /dev/null || true
+
+    awslocal sns subscribe --region $REGION \
+      --topic-arn arn:aws:sns:$REGION:000000000000:videomatt_videos \
+      --protocol sqs \
+      --notification-endpoint arn:aws:sqs:$REGION:000000000000:videomatt_videos_1_event_video_created \
+      --attributes '{"FilterPolicy":"{\"EventType\":[\"videomatt.videos.1.event.video.created\"]}"}' || true
+
+    # ---------- EventBridge ----------
+    awslocal events put-rule --region $REGION \
+      --name videomatt_users \
+      --event-bus-name default \
+      --event-pattern '{"detail": {"name": ["videomatt.users.1.event.user.created"]}}' || true
+
+    awslocal events put-targets --region $REGION \
+      --event-bus-name default \
+      --rule videomatt_users \
+      --targets Id=UserCreatedTarget,Arn=arn:aws:sqs:$REGION:000000000000:videomatt_users_1_event_user_created || true
+
+    # ---------- Queue policies ----------
+    awslocal sqs set-queue-attributes --region $REGION \
+      --queue-url http://localhost:4566/000000000000/videomatt_users_1_event_user_created \
+      --attributes '{"Policy":"{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowEventBridgeSendMessage\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"sqs:SendMessage\",\"Resource\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_users_1_event_user_created\",\"Condition\":{\"ArnEquals\":{\"aws:SourceArn\":\"arn:aws:events:us-east-1:000000000000:rule/videomatt_users\"}}}]}"}' || true
+
+    awslocal sqs set-queue-attributes --region $REGION \
+      --queue-url http://localhost:4566/000000000000/videomatt_videos_1_event_video_created \
+      --attributes '{"Policy":"{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowSnsSendMessage\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"sns.amazonaws.com\"},\"Action\":\"sqs:SendMessage\",\"Resource\":\"arn:aws:sqs:us-east-1:000000000000:videomatt_videos_1_event_video_created\",\"Condition\":{\"ArnEquals\":{\"aws:SourceArn\":\"arn:aws:sns:us-east-1:000000000000:videomatt_videos\"}}}]}"}' || true

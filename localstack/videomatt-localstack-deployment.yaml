@@ -26,6 +26,13 @@ spec:
           volumeMounts:
             - name: localstack-data
               mountPath: /var/lib/localstack
+            - name: init-scripts
+              mountPath: /etc/localstack/init/ready.d
+              readOnly: true
       volumes:
         - name: localstack-data
           emptyDir: {}
+        - name: init-scripts
+          configMap:
+            name: videomatt-localstack-init-scripts
+            defaultMode: 0755

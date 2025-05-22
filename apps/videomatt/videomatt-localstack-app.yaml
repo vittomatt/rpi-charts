@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/vittomatt/rpi-manifests
+    repoURL: https://github.com/vittomatt/rpi-charts
     targetRevision: HEAD
     path: localstack
   destination:

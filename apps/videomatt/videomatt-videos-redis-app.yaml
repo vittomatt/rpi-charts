@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: vittomatt-redis
+  name: videomatt-videos-redis
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
@@ -12,13 +12,13 @@ spec:
     chart: redis
     targetRevision: 19.5.0
     helm:
-      releaseName: redis-vittomatt
+      releaseName: redis-videomatt
       values: |-
         architecture: standalone
 
         auth:
           enabled: true
-          existingSecret: vittomatt-secret
+          existingSecret: videomatt-videos-secret
           existingSecretPasswordKey: REDIS_PASSWORD
           acl:
             enabled: true

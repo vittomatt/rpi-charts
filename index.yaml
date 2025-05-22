@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   videomatt-users:
   - apiVersion: v2
+    appVersion: 20250522-1159-c416c90
+    created: "2025-05-22T12:11:53.489999498Z"
+    description: Videomatt Users Chart
+    digest: 63e057a5a1212188078d47cbe12b540a0eec6571e37ed91c0ab18b89ad1b8f1c
+    name: videomatt-users
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250522-1159-c416c90.tgz
+    version: 20250522-1159-c416c90
+  - apiVersion: v2
     appVersion: 20250519-2249-6e3b51c
-    created: "2025-05-19T23:01:02.195020318Z"
+    created: "2025-05-22T12:11:53.489783204Z"
     description: Videomatt Users Chart
     digest: 3f232474d1f47c3393939075a9aabeb673a8a6014c0ed0ad9bae40c414a4e7aa
     name: videomatt-users
@@ -13,7 +23,7 @@ entries:
     version: 20250519-2249-6e3b51c
   - apiVersion: v2
     appVersion: 20250519-2244-315c6bb
-    created: "2025-05-19T23:01:02.194841243Z"
+    created: "2025-05-22T12:11:53.489545349Z"
     description: Videomatt Users Chart
     digest: e1cd1333be6ff0e54d120ab9990fad6ccc3b194b0ff45ed777df6f4cff02789f
     name: videomatt-users
@@ -23,7 +33,7 @@ entries:
     version: 20250519-2244-315c6bb
   - apiVersion: v2
     appVersion: 20250519-2223-e13b197
-    created: "2025-05-19T23:01:02.19463177Z"
+    created: "2025-05-22T12:11:53.48905897Z"
     description: Videomatt Users Chart
     digest: 54c34d6002889810932e4b21dd76bbbd08ef4a35d2dac21937fb32af97972383
     name: videomatt-users
@@ -33,7 +43,7 @@ entries:
     version: 20250519-2223-e13b197
   - apiVersion: v2
     appVersion: 20250519-2159-33cd7a6
-    created: "2025-05-19T23:01:02.194420815Z"
+    created: "2025-05-22T12:11:53.48866272Z"
     description: Videomatt Users Chart
     digest: 006ca4f02d77aa30fe5867081bcea90108d4b1a8ddffa414aacca954273e37c6
     name: videomatt-users
@@ -43,7 +53,7 @@ entries:
     version: 20250519-2159-33cd7a6
   - apiVersion: v2
     appVersion: 20250519-2137-664cd8a
-    created: "2025-05-19T23:01:02.193915215Z"
+    created: "2025-05-22T12:11:53.488250479Z"
     description: Videomatt Users Chart
     digest: a1d1a2ec9eaaf3f6fb62420a8533cca7c9c3c1d2dce0c9f4a16325e3162522a5
     name: videomatt-users
@@ -53,7 +63,7 @@ entries:
     version: 20250519-2137-664cd8a
   - apiVersion: v2
     appVersion: 20250519-2111-f5c25df
-    created: "2025-05-19T23:01:02.193415796Z"
+    created: "2025-05-22T12:11:53.488062228Z"
     description: Videomatt Users Chart
     digest: 3c262d6c76ae53f916aa552fddfd8d286f9f298287ecb47aa95832d802779874
     name: videomatt-users
@@ -63,7 +73,7 @@ entries:
     version: 20250519-2111-f5c25df
   - apiVersion: v2
     appVersion: 20250519-1414-1ecccf9
-    created: "2025-05-19T23:01:02.193199171Z"
+    created: "2025-05-22T12:11:53.487867684Z"
     description: Videomatt Users Chart
     digest: 6751c563b38bbb6a2eb7f7cac41be44dc7259377776b344bf98871625811ae5e
     name: videomatt-users
@@ -73,7 +83,7 @@ entries:
     version: 20250519-1414-1ecccf9
   - apiVersion: v2
     appVersion: 20250518-2340-34139a8
-    created: "2025-05-19T23:01:02.193035414Z"
+    created: "2025-05-22T12:11:53.48765149Z"
     description: Videomatt Users Chart
     digest: fd5abfb5695cab37c8c8957c813002d040af4804f03f6a7f971584f5a2adc26e
     name: videomatt-users
@@ -83,7 +93,7 @@ entries:
     version: 20250518-2340-34139a8
   - apiVersion: v2
     appVersion: 20250518-2310-2c31acc
-    created: "2025-05-19T23:01:02.192861498Z"
+    created: "2025-05-22T12:11:53.487463078Z"
     description: Videomatt Users Chart
     digest: 672d1749203bcb55f49e14e507ea992a699d72db4b819a34a8e44e7e1c7db5f6
     name: videomatt-users
@@ -93,7 +103,7 @@ entries:
     version: 20250518-2310-2c31acc
   - apiVersion: v2
     appVersion: 20250518-2254-d2bcf9c
-    created: "2025-05-19T23:01:02.192668026Z"
+    created: "2025-05-22T12:11:53.487256071Z"
     description: Videomatt Users Chart
     digest: 2006d495ed38838aa05bc9c670caf5fdd1e88225fddd1bec8e9b440364d90a1f
     name: videomatt-users
@@ -103,7 +113,7 @@ entries:
     version: 20250518-2254-d2bcf9c
   - apiVersion: v2
     appVersion: 20250518-1827-5e4f5d2
-    created: "2025-05-19T23:01:02.192471718Z"
+    created: "2025-05-22T12:11:53.487020501Z"
     description: Videomatt Users Chart
     digest: e0100526c7f82ee850cbd0bdd44e0c50faf7cf757ea6a247284c97351b0f6ca3
     name: videomatt-users
@@ -113,7 +123,7 @@ entries:
     version: 20250518-1827-5e4f5d2
   - apiVersion: v2
     appVersion: 20250518-1802-a5f600d
-    created: "2025-05-19T23:01:02.192286571Z"
+    created: "2025-05-22T12:11:53.486828692Z"
     description: Videomatt Users Chart
     digest: 77662fbc48ae3d8db46b51cd226d2acc3a4ca0a9fbe9dfe44d4ddd7ca483bdf8
     name: videomatt-users
@@ -123,7 +133,7 @@ entries:
     version: 20250518-1802-a5f600d
   - apiVersion: v2
     appVersion: 20250518-1712-58e3d19
-    created: "2025-05-19T23:01:02.1920833Z"
+    created: "2025-05-22T12:11:53.486586379Z"
     description: Videomatt Users Chart
     digest: 74f2ef2d8e5f55da3d9eba6a5fed774cc7acdaa702a1094a8439ba7250f54e18
     name: videomatt-users
@@ -133,8 +143,18 @@ entries:
     version: 20250518-1712-58e3d19
   videomatt-videos:
   - apiVersion: v2
+    appVersion: 20250522-1159-c416c90
+    created: "2025-05-22T12:11:53.492496604Z"
+    description: Videomatt Videos Chart
+    digest: 0bf5348242a0ab233b6a9ca67183b26fa6af90e29e15e8740fd5e5290390ef03
+    name: videomatt-videos
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250522-1159-c416c90.tgz
+    version: 20250522-1159-c416c90
+  - apiVersion: v2
     appVersion: 20250519-2249-6e3b51c
-    created: "2025-05-19T23:01:02.197366805Z"
+    created: "2025-05-22T12:11:53.492322499Z"
     description: Videomatt Videos Chart
     digest: dcddd1b2e93789492d4adbbb4cb7cb2445d9cb58d08c93272a415cafb6ad0892
     name: videomatt-videos
@@ -144,7 +164,7 @@ entries:
     version: 20250519-2249-6e3b51c
   - apiVersion: v2
     appVersion: 20250519-2244-315c6bb
-    created: "2025-05-19T23:01:02.197160628Z"
+    created: "2025-05-22T12:11:53.492134427Z"
     description: Videomatt Videos Chart
     digest: 9a5bed373bed90a4f07f6102afef5b6714e7fc9b9cbeba2be62fd833af1256dc
     name: videomatt-videos
@@ -154,7 +174,7 @@ entries:
     version: 20250519-2244-315c6bb
   - apiVersion: v2
     appVersion: 20250519-2223-e13b197
-    created: "2025-05-19T23:01:02.196982034Z"
+    created: "2025-05-22T12:11:53.4919594Z"
     description: Videomatt Videos Chart
     digest: 9c51cfc045c0e08af3972fe45f9ec42d690d2ed1e5ddf752f0bb19a2fec1a169
     name: videomatt-videos
@@ -164,7 +184,7 @@ entries:
     version: 20250519-2223-e13b197
   - apiVersion: v2
     appVersion: 20250519-2159-33cd7a6
-    created: "2025-05-19T23:01:02.196784824Z"
+    created: "2025-05-22T12:11:53.491752143Z"
     description: Videomatt Videos Chart
     digest: fd505b1bc62fa874470dec185c1dc95873b23bedc7754102a67ed5bc2933196f
     name: videomatt-videos
@@ -174,7 +194,7 @@ entries:
     version: 20250519-2159-33cd7a6
   - apiVersion: v2
     appVersion: 20250519-2137-664cd8a
-    created: "2025-05-19T23:01:02.196602132Z"
+    created: "2025-05-22T12:11:53.491553261Z"
     description: Videomatt Videos Chart
     digest: 6e5bf45c93f6da8ef89dea966110ee52c79e36c1250075e130e47c517fa6f178
     name: videomatt-videos
@@ -184,7 +204,7 @@ entries:
     version: 20250519-2137-664cd8a
   - apiVersion: v2
     appVersion: 20250519-2111-f5c25df
-    created: "2025-05-19T23:01:02.196417316Z"
+    created: "2025-05-22T12:11:53.491364419Z"
     description: Videomatt Videos Chart
     digest: 32c88ac8dab34b57cb71aa0e338f9fab4c6aaefe77e926b5b07c0304f66a064c
     name: videomatt-videos
@@ -194,7 +214,7 @@ entries:
     version: 20250519-2111-f5c25df
   - apiVersion: v2
     appVersion: 20250519-1414-1ecccf9
-    created: "2025-05-19T23:01:02.196208515Z"
+    created: "2025-05-22T12:11:53.491192808Z"
     description: Videomatt Videos Chart
     digest: 5701325821bf15052fbb1ab4b2d400c65b8b36d2c4cb02cd21cc4249ed89fab8
     name: videomatt-videos
@@ -204,7 +224,7 @@ entries:
     version: 20250519-1414-1ecccf9
   - apiVersion: v2
     appVersion: 20250518-2340-34139a8
-    created: "2025-05-19T23:01:02.196014962Z"
+    created: "2025-05-22T12:11:53.491027549Z"
     description: Videomatt Videos Chart
     digest: 536fa73c5b11d13a25f3b22c89dcef357c3af0bd47e2537a53db1afe55ee9937
     name: videomatt-videos
@@ -214,7 +234,7 @@ entries:
     version: 20250518-2340-34139a8
   - apiVersion: v2
     appVersion: 20250518-2310-2c31acc
-    created: "2025-05-19T23:01:02.195827631Z"
+    created: "2025-05-22T12:11:53.490858764Z"
     description: Videomatt Videos Chart
     digest: 61265b4fae5c16ae592c21c2d431b585dba345711d703ad2d9dc5be7025031ce
     name: videomatt-videos
@@ -224,7 +244,7 @@ entries:
     version: 20250518-2310-2c31acc
   - apiVersion: v2
     appVersion: 20250518-2254-d2bcf9c
-    created: "2025-05-19T23:01:02.195657542Z"
+    created: "2025-05-22T12:11:53.490660363Z"
     description: Videomatt Videos Chart
     digest: 68b287ed40a2ac55a92a2ff4bb1a2582f2b5959a2b1f0a155e7872e32563f543
     name: videomatt-videos
@@ -234,7 +254,7 @@ entries:
     version: 20250518-2254-d2bcf9c
   - apiVersion: v2
     appVersion: 20250518-1827-5e4f5d2
-    created: "2025-05-19T23:01:02.195503233Z"
+    created: "2025-05-22T12:11:53.490499422Z"
     description: Videomatt Videos Chart
     digest: 26f563cc38a7dd5efcf21d8ddcbaf95eb669bee22bd97fe5567b825228420914
     name: videomatt-videos
@@ -244,7 +264,7 @@ entries:
     version: 20250518-1827-5e4f5d2
   - apiVersion: v2
     appVersion: 20250518-1802-a5f600d
-    created: "2025-05-19T23:01:02.195347942Z"
+    created: "2025-05-22T12:11:53.49034323Z"
     description: Videomatt Videos Chart
     digest: d25f236a044a8192cf7041f09b099ea23c4950c58b6e4870c897577d1890dfc4
     name: videomatt-videos
@@ -254,7 +274,7 @@ entries:
     version: 20250518-1802-a5f600d
   - apiVersion: v2
     appVersion: 20250518-1712-58e3d19
-    created: "2025-05-19T23:01:02.195174707Z"
+    created: "2025-05-22T12:11:53.490161521Z"
     description: Videomatt Videos Chart
     digest: ee3f8d7c017e3119c8e457eb412bdefec8bd745534a088cd5550ee36a137a7c5
     name: videomatt-videos
@@ -353,4 +373,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-05-19T23:01:02.191748813Z"
+generated: "2025-05-22T12:11:53.486237678Z"

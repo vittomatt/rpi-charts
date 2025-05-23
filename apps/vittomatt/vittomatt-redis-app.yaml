@@ -12,7 +12,7 @@ spec:
     chart: redis
     targetRevision: 19.5.0
     helm:
-      releaseName: redis-vittomatt
+      releaseName: vittomatt-redis
       values: |-
         architecture: standalone
 

@@ -11,7 +11,7 @@ spec:
     chart: postgresql
     targetRevision: 13.2.25
     helm:
-      releaseName: postgres-videos
+      releaseName: videomatt-videos-postgres
       values: |-
         image:
           repository: bitnami/postgresql

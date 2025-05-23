@@ -10,7 +10,7 @@ spec:
     chart: postgresql
     targetRevision: 13.2.25
     helm:
-      releaseName: postgres-shard-1
+      releaseName: videomatt-users-postgres-shard-1
       values: |-
         auth:
           username: videomatt

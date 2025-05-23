@@ -12,7 +12,7 @@ spec:
     chart: redis
     targetRevision: 19.5.0
     helm:
-      releaseName: redis-videomatt
+      releaseName: videomatt-videos-redis
       values: |-
         architecture: standalone
 

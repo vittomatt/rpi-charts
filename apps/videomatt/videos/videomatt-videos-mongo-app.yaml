@@ -1,0 +1,50 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: videomatt-videos-mongo
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
+spec:
+  project: default
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: mongodb
+    targetRevision: 15.1.2
+    helm:
+      releaseName: videomatt-videos-mongo
+      values: |-
+        architecture: standalone
+
+        auth:
+          enabled: true
+          rootUser: videomatt
+          rootPassword: password
+
+        # --------- image override for ARM64 ----------
+        image:
+          registry: ghcr.io
+          repository: zcube/bitnami-compat/mongodb
+          tag: 7.0.7-debian-12-r0
+          pullPolicy: IfNotPresent
+
+        persistence:
+          enabled: true
+          size: 1Gi
+          storageClass: ""
+
+        podAnnotations:
+          linkerd.io/inject: "disabled"
+
+        service:
+          type: ClusterIP
+          port: 27017
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vittospace
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

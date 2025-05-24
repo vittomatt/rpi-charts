@@ -1,41 +1,63 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
+apiVersion: v1
+kind: PersistentVolumeClaim
 metadata:
-  name: videomatt-videos-mongo
-  namespace: argocd
+  name: mongo-pvc
+  namespace: vittospace
 spec:
-  project: default
-  source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: mongodb
-    targetRevision: 15.1.2
-    helm:
-      releaseName: videomatt-videos-mongo
-      values: |-
-        architecture: standalone
-        auth:
-          enabled: true
-          rootUser: videomatt
-          rootPassword: password
-        image:
-          registry: ghcr.io
-          repository: dlavrenuek/bitnami-mongodb-arm
-          tag: 6.0.6
-          pullPolicy: IfNotPresent
-        persistence:
-          enabled: true
-          size: 1Gi
-        podAnnotations:
-          linkerd.io/inject: "disabled"
-        service:
-          type: ClusterIP
-          port: 27017
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongo
+  namespace: vittospace
+spec:
+  selector:
+    matchLabels: { app: mongo }
+  serviceName: mongo
+  replicas: 1
+  template:
+    metadata:
+      labels: { app: mongo }
+    spec:
+      containers:
+        - name: mongodb
+          image: mongo:6.0
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: videomatt-videos-secret
+                  key: VIDEOS_COMMENT_MONGO_DB_USER
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: videomatt-videos-secret
+                  key: VIDEOS_COMMENT_MONGO_DB_PASSWORD
+          ports:
+            - containerPort: 27017
+              name: mongo
+          volumeMounts:
+            - name: data
+              mountPath: /data/db
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: mongo-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+  namespace: vittospace
+spec:
+  type: ClusterIP
+  ports:
+    - port: 27017
+      targetPort: mongo
+  selector:
+    app: mongo

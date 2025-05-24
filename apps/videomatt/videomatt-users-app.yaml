@@ -9,7 +9,7 @@ spec:
     repoURL: https://vittomatt.github.io/rpi-charts
     chart: videomatt-users
     # Auto updated by ci
-    targetRevision: 20250523-1339-828bf6f
+    targetRevision: 20250524-1320-78933e6
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace

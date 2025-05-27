@@ -13,18 +13,22 @@ spec:
       releaseName: videomatt-users-postgres-shard-2
       values: |-
         auth:
-          username: videomatt
-          password: password
-          database: users
-          existingSecret: ""
+          existingSecret: videomatt-users-secret
+          secretKeys:
+            adminPasswordKey: USERS_POSTGRES_DB_SHARD_2_PASSWORD
 
         primary:
-          persistence:
-            enabled: true
-            size: 1Gi
-            storageClass: ""
-          podAnnotations:
-            linkerd.io/inject: "disabled"
+          extraEnvVars:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: videomatt-users-secret
+                  key: USERS_POSTGRES_DB_SHARD_2_USER
+            - name: POSTGRES_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: videomatt-users-secret
+                  key: USERS_POSTGRES_DB_SHARD_2_NAME
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace

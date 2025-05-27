@@ -9,32 +9,39 @@ spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: postgresql
-    targetRevision: 13.2.25
+    targetRevision: 13.2.30
     helm:
       releaseName: videomatt-videos-postgres
       values: |-
         image:
           repository: bitnami/postgresql
-          tag: 17.3.0-debian-12-r4
-          debug: true
-
-        auth:
-          username: videomatt
-          password: password
-          database: videos
-          replicationUsername: videomatt-replica
-          replicationPassword: password
+          tag: 17.5.0-debian-12-r7
 
         architecture: replication
 
+        auth:
+          postgresPassword: password
+          username: videomatt
+          password: password
+          database: videos
+          replicationUsername: videomattrep
+          replicationPassword: password
+          usePasswordFiles: false
+
         primary:
           persistence:
-            enabled: false
+            enabled: true
+          persistentVolumeClaimRetentionPolicy:
+            whenDeleted: Delete
+            whenScaled: Retain
 
         readReplicas:
           replicaCount: 1
           persistence:
-            enabled: false
+            enabled: true
+          persistentVolumeClaimRetentionPolicy:
+            whenDeleted: Delete
+            whenScaled: Delete
 
         volumePermissions:
           enabled: true

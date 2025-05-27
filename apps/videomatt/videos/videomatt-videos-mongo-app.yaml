@@ -7,17 +7,14 @@ metadata:
     argocd.argoproj.io/sync-wave: "-1"
 spec:
   project: default
-
   source:
     repoURL: https://github.com/vittomatt/rpi-charts
     targetRevision: HEAD
     path: mongo
     kustomize: {}
-
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace
-
   syncPolicy:
     automated:
       prune: true

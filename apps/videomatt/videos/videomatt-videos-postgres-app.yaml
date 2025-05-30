@@ -12,10 +12,10 @@ spec:
     targetRevision: 13.2.30
     helm:
       releaseName: videomatt-videos-postgres
-      values: |-
+      values: |
         image:
           repository: bitnami/postgresql
-          tag: 17.5.0-debian-12-r7
+          tag: 16.6.0-debian-12-r2
 
         architecture: replication
 
@@ -24,24 +24,21 @@ spec:
           username: videomatt
           password: password
           postgresPassword: password
-          replicationUsername: videomattrep
+          replicationUsername: videomatt-replica
           replicationPassword: password
-          usePasswordFiles: false
 
         primary:
           persistence:
-            enabled: true
+            enabled: false
           persistentVolumeClaimRetentionPolicy:
             whenDeleted: Delete
-            whenScaled: Retain
 
         readReplicas:
           replicaCount: 1
           persistence:
-            enabled: true
+            enabled: false
           persistentVolumeClaimRetentionPolicy:
             whenDeleted: Delete
-            whenScaled: Delete
 
         volumePermissions:
           enabled: true

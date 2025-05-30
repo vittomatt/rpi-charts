@@ -22,23 +22,25 @@ spec:
         auth:
           database: videos
           username: videomatt
-          password: password
-          postgresPassword: password
-          replicationUsername: videomatt-replica
-          replicationPassword: password
+
+          existingSecret: videomatt-videos-secret
+          secretKeys:
+            adminPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+            userPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+            replicationPasswordKey: VIDEOS_POSTGRES_DB_REPLICA_PASSWORD
 
         primary:
           persistence:
             enabled: false
           persistentVolumeClaimRetentionPolicy:
-            whenDeleted: Delete
+            whenDeleted: Retain
 
         readReplicas:
           replicaCount: 1
           persistence:
             enabled: false
           persistentVolumeClaimRetentionPolicy:
-            whenDeleted: Delete
+            whenDeleted: Retain
 
         volumePermissions:
           enabled: true

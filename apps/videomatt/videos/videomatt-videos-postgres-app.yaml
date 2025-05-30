@@ -20,12 +20,17 @@ spec:
         architecture: replication
 
         auth:
-          postgresPassword: password
-          username: videomatt
-          password: password
+          existingSecret: videomatt-videos-secret
+
           database: videos
+          username: videomatt
           replicationUsername: videomattrep
-          replicationPassword: password
+
+          secretKeys:
+            adminPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+            userPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+            replicationPasswordKey: VIDEOS_POSTGRES_DB_REPLICA_PASSWORD
+          
           usePasswordFiles: false
 
         primary:

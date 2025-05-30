@@ -22,6 +22,7 @@ spec:
         auth:
           database: videos
           username: videomatt
+          replicationUsername: videomatt-replica
 
           existingSecret: videomatt-videos-secret
           secretKeys:

@@ -20,31 +20,15 @@ spec:
         architecture: replication
 
         auth:
-          existingSecret: videomatt-videos-secret
-
-          database: placeholder
-          username: placeholder
+          database: videos
+          username: videomatt
+          password: password
+          postgresPassword: password
           replicationUsername: videomattrep
-
-          secretKeys:
-            adminPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
-            userPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
-            replicationPasswordKey: VIDEOS_POSTGRES_DB_REPLICA_PASSWORD
-          
+          replicationPassword: password
           usePasswordFiles: false
 
         primary:
-          extraEnvVars:
-            - name: POSTGRESQL_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-videos-secret
-                  key: VIDEOS_POSTGRES_DB_NAME
-            - name: POSTGRESQL_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-videos-secret
-                  key: VIDEOS_POSTGRES_DB_USER
           persistence:
             enabled: true
           persistentVolumeClaimRetentionPolicy:
@@ -52,17 +36,6 @@ spec:
             whenScaled: Retain
 
         readReplicas:
-          extraEnvVars:
-            - name: POSTGRESQL_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-videos-secret
-                  key: VIDEOS_POSTGRES_DB_NAME
-            - name: POSTGRESQL_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-videos-secret
-                  key: VIDEOS_POSTGRES_DB_USER
           replicaCount: 1
           persistence:
             enabled: true

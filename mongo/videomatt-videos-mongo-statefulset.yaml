@@ -27,6 +27,11 @@ spec:
                 secretKeyRef:
                   name: videomatt-videos-secret
                   key: VIDEOS_COMMENT_MONGO_DB_PASSWORD
+            - name: MONGO_INITDB_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: videomatt-videos-secret
+                  key: VIDEOS_COMMENT_MONGO_DB_NAME
           ports:
             - name: mongo
               containerPort: 27017

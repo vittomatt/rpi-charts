@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   prode:
   - apiVersion: v2
+    appVersion: 20250601-2249-be5012b
+    created: "2025-06-01T23:05:53.468600133Z"
+    description: Prode Chart
+    digest: 610ce2b1575ca76896d86fe42bc3a2ee2cdf90bf0baa11788f311ee2df13530e
+    name: prode
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/prode/prode-20250601-2249-be5012b.tgz
+    version: 20250601-2249-be5012b
+  - apiVersion: v2
     appVersion: 20250601-2235-2ac74a7
-    created: "2025-06-01T22:51:24.492185969Z"
+    created: "2025-06-01T23:05:53.467818633Z"
     description: Prode Chart
     digest: 679cb2e7bb7e0074dc4b94b0b8afa7e21b997f4ae42660fd70ce22344ecb1301
     name: prode
@@ -314,4 +324,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-06-01T22:51:24.491685599Z"
+generated: "2025-06-01T23:05:53.467538047Z"

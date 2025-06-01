@@ -1,0 +1,48 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prode-postgres
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: postgresql
+    targetRevision: 13.2.30
+    helm:
+      releaseName: prode-postgres
+      values: |
+        image:
+          repository: bitnami/postgresql
+          tag: 16.6.0-debian-12-r2
+
+        architecture: standalone
+
+        auth:
+          database: prode
+          username: prode
+          existingSecret: prode-secret
+          secretKeys:
+            adminPasswordKey: PRODE_POSTGRES_DB_PASSWORD
+            userPasswordKey: PRODE_POSTGRES_DB_PASSWORD
+
+        primary:
+          persistence:
+            enabled: true
+          persistentVolumeClaimRetentionPolicy:
+            whenDeleted: Retain
+
+        volumePermissions:
+          enabled: true
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prodespace
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

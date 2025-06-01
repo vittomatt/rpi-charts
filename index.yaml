@@ -22,16 +22,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250530-1832-8812286.tgz
     version: 20250530-1832-8812286
   - apiVersion: v2
-    appVersion: 20250530-1433-40646f0
-    created: "2025-06-01T17:16:49.811039362Z"
-    description: Videomatt Users Chart
-    digest: f5c96dd1219c0cb37016003dd49d655c9b1e17bc0b3e9723b84dace2ccf7f24f
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250530-1433-40646f0.tgz
-    version: 20250530-1433-40646f0
-  - apiVersion: v2
     appVersion: 20250526-1329-beacb2e
     created: "2025-06-01T17:16:49.810871366Z"
     description: Videomatt Users Chart
@@ -52,26 +42,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250525-0112-af6540b.tgz
     version: 20250525-0112-af6540b
   - apiVersion: v2
-    appVersion: 20250525-0033-b58ef06
-    created: "2025-06-01T17:16:49.810524846Z"
-    description: Videomatt Users Chart
-    digest: 60db562c52418dd6192cffeb2da2962cd219eb9b8cf815fa818b83d8ce541fea
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250525-0033-b58ef06.tgz
-    version: 20250525-0033-b58ef06
-  - apiVersion: v2
-    appVersion: 20250525-0001-81f1a1b
-    created: "2025-06-01T17:16:49.810344137Z"
-    description: Videomatt Users Chart
-    digest: f75681f8a22ba982aefb88963ca496f35e0c35e002d56674a3929a3b35ae9cb1
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250525-0001-81f1a1b.tgz
-    version: 20250525-0001-81f1a1b
-  - apiVersion: v2
     appVersion: 20250524-1912-9e8d1c4
     created: "2025-06-01T17:16:49.810094368Z"
     description: Videomatt Users Chart
@@ -82,116 +52,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1912-9e8d1c4.tgz
     version: 20250524-1912-9e8d1c4
   - apiVersion: v2
-    appVersion: 20250524-1855-09ddcb6
-    created: "2025-06-01T17:16:49.809884644Z"
-    description: Videomatt Users Chart
-    digest: 6349460607ff376deecb50a66740f6ae343f9802c807ad7312f8ae49836d46bc
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1855-09ddcb6.tgz
-    version: 20250524-1855-09ddcb6
-  - apiVersion: v2
-    appVersion: 20250524-1828-cff7d7a
-    created: "2025-06-01T17:16:49.809697773Z"
-    description: Videomatt Users Chart
-    digest: 7931162539c2685aa5e1ccae1d228449ba8fa9f3440497d655027a0b739a02a3
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1828-cff7d7a.tgz
-    version: 20250524-1828-cff7d7a
-  - apiVersion: v2
-    appVersion: 20250524-1607-0e33986
-    created: "2025-06-01T17:16:49.809506013Z"
-    description: Videomatt Users Chart
-    digest: df80c911b5412d19686b1bc35548604515ae8a4bd5064973819ae9eeef76e8c2
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1607-0e33986.tgz
-    version: 20250524-1607-0e33986
-  - apiVersion: v2
-    appVersion: 20250524-1542-7d4d72b
-    created: "2025-06-01T17:16:49.80933382Z"
-    description: Videomatt Users Chart
-    digest: 93ffdc9b4b33a6c4f4256f1b15c8519aed4ab243e9cbf892d93e18b2522cb5f2
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1542-7d4d72b.tgz
-    version: 20250524-1542-7d4d72b
-  - apiVersion: v2
-    appVersion: 20250524-1502-e063e08
-    created: "2025-06-01T17:16:49.809162268Z"
-    description: Videomatt Users Chart
-    digest: c6eb49773dcea5a071350fa1e26d30194762e36423aef5e441460599fed9785f
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1502-e063e08.tgz
-    version: 20250524-1502-e063e08
-  - apiVersion: v2
-    appVersion: 20250524-1434-48398ac
-    created: "2025-06-01T17:16:49.808966661Z"
-    description: Videomatt Users Chart
-    digest: b443dd62b24c5cec601a8c927f9e45f950f5b85600ed14d9307df4fe43599c87
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1434-48398ac.tgz
-    version: 20250524-1434-48398ac
-  - apiVersion: v2
-    appVersion: 20250524-1424-b4475b8
-    created: "2025-06-01T17:16:49.808801501Z"
-    description: Videomatt Users Chart
-    digest: 0bc333e528c6fd5a94fe9d89ee9a4674fbe3085bea34f0d278e2142ff69b4d29
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1424-b4475b8.tgz
-    version: 20250524-1424-b4475b8
-  - apiVersion: v2
-    appVersion: 20250524-1414-a093cef
-    created: "2025-06-01T17:16:49.808611594Z"
-    description: Videomatt Users Chart
-    digest: 58708325092d1e005e8b8d57ec9a845934c91245380d5db8c6fea67fec9ef7e8
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1414-a093cef.tgz
-    version: 20250524-1414-a093cef
-  - apiVersion: v2
-    appVersion: 20250524-1350-4a0ebeb
-    created: "2025-06-01T17:16:49.808443128Z"
-    description: Videomatt Users Chart
-    digest: 8fa16d5107072b788f76a98bacc0d671f62000c48afaf09841d1fab998b95f77
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1350-4a0ebeb.tgz
-    version: 20250524-1350-4a0ebeb
-  - apiVersion: v2
-    appVersion: 20250524-1333-84bc487
-    created: "2025-06-01T17:16:49.808271165Z"
-    description: Videomatt Users Chart
-    digest: d4405c4413e7aacd6f859f7cd1546eb740e8ac0e03361d7382944e5518074515
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1333-84bc487.tgz
-    version: 20250524-1333-84bc487
-  - apiVersion: v2
-    appVersion: 20250524-1320-78933e6
-    created: "2025-06-01T17:16:49.808077191Z"
-    description: Videomatt Users Chart
-    digest: b5cc7ab83a64c3aa2ed0c8f8418ebf5c7139df4a815393d64a81e01a32e2ac83
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250524-1320-78933e6.tgz
-    version: 20250524-1320-78933e6
-  - apiVersion: v2
     appVersion: 20250523-1339-828bf6f
     created: "2025-06-01T17:16:49.807883467Z"
     description: Videomatt Users Chart
@@ -201,16 +61,6 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250523-1339-828bf6f.tgz
     version: 20250523-1339-828bf6f
-  - apiVersion: v2
-    appVersion: 20250523-1320-6483b24
-    created: "2025-06-01T17:16:49.807701456Z"
-    description: Videomatt Users Chart
-    digest: 5822f41ab5317db841f569d3e4f19bc267273d435b1e45162a95a8c281064531
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250523-1320-6483b24.tgz
-    version: 20250523-1320-6483b24
   - apiVersion: v2
     appVersion: 20250522-1159-c416c90
     created: "2025-06-01T17:16:49.807508874Z"
@@ -232,66 +82,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2249-6e3b51c.tgz
     version: 20250519-2249-6e3b51c
   - apiVersion: v2
-    appVersion: 20250519-2244-315c6bb
-    created: "2025-06-01T17:16:49.806543235Z"
-    description: Videomatt Users Chart
-    digest: e1cd1333be6ff0e54d120ab9990fad6ccc3b194b0ff45ed777df6f4cff02789f
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2244-315c6bb.tgz
-    version: 20250519-2244-315c6bb
-  - apiVersion: v2
-    appVersion: 20250519-2223-e13b197
-    created: "2025-06-01T17:16:49.806126974Z"
-    description: Videomatt Users Chart
-    digest: 54c34d6002889810932e4b21dd76bbbd08ef4a35d2dac21937fb32af97972383
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2223-e13b197.tgz
-    version: 20250519-2223-e13b197
-  - apiVersion: v2
-    appVersion: 20250519-2159-33cd7a6
-    created: "2025-06-01T17:16:49.805936105Z"
-    description: Videomatt Users Chart
-    digest: 006ca4f02d77aa30fe5867081bcea90108d4b1a8ddffa414aacca954273e37c6
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2159-33cd7a6.tgz
-    version: 20250519-2159-33cd7a6
-  - apiVersion: v2
-    appVersion: 20250519-2137-664cd8a
-    created: "2025-06-01T17:16:49.805760836Z"
-    description: Videomatt Users Chart
-    digest: a1d1a2ec9eaaf3f6fb62420a8533cca7c9c3c1d2dce0c9f4a16325e3162522a5
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2137-664cd8a.tgz
-    version: 20250519-2137-664cd8a
-  - apiVersion: v2
-    appVersion: 20250519-2111-f5c25df
-    created: "2025-06-01T17:16:49.805561672Z"
-    description: Videomatt Users Chart
-    digest: 3c262d6c76ae53f916aa552fddfd8d286f9f298287ecb47aa95832d802779874
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-2111-f5c25df.tgz
-    version: 20250519-2111-f5c25df
-  - apiVersion: v2
-    appVersion: 20250519-1414-1ecccf9
-    created: "2025-06-01T17:16:49.805365815Z"
-    description: Videomatt Users Chart
-    digest: 6751c563b38bbb6a2eb7f7cac41be44dc7259377776b344bf98871625811ae5e
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250519-1414-1ecccf9.tgz
-    version: 20250519-1414-1ecccf9
-  - apiVersion: v2
     appVersion: 20250518-2340-34139a8
     created: "2025-06-01T17:16:49.805151843Z"
     description: Videomatt Users Chart
@@ -301,56 +91,6 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-2340-34139a8.tgz
     version: 20250518-2340-34139a8
-  - apiVersion: v2
-    appVersion: 20250518-2310-2c31acc
-    created: "2025-06-01T17:16:49.804955475Z"
-    description: Videomatt Users Chart
-    digest: 672d1749203bcb55f49e14e507ea992a699d72db4b819a34a8e44e7e1c7db5f6
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-2310-2c31acc.tgz
-    version: 20250518-2310-2c31acc
-  - apiVersion: v2
-    appVersion: 20250518-2254-d2bcf9c
-    created: "2025-06-01T17:16:49.804769866Z"
-    description: Videomatt Users Chart
-    digest: 2006d495ed38838aa05bc9c670caf5fdd1e88225fddd1bec8e9b440364d90a1f
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-2254-d2bcf9c.tgz
-    version: 20250518-2254-d2bcf9c
-  - apiVersion: v2
-    appVersion: 20250518-1827-5e4f5d2
-    created: "2025-06-01T17:16:49.804577345Z"
-    description: Videomatt Users Chart
-    digest: e0100526c7f82ee850cbd0bdd44e0c50faf7cf757ea6a247284c97351b0f6ca3
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-1827-5e4f5d2.tgz
-    version: 20250518-1827-5e4f5d2
-  - apiVersion: v2
-    appVersion: 20250518-1802-a5f600d
-    created: "2025-06-01T17:16:49.804402216Z"
-    description: Videomatt Users Chart
-    digest: 77662fbc48ae3d8db46b51cd226d2acc3a4ca0a9fbe9dfe44d4ddd7ca483bdf8
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-1802-a5f600d.tgz
-    version: 20250518-1802-a5f600d
-  - apiVersion: v2
-    appVersion: 20250518-1712-58e3d19
-    created: "2025-06-01T17:16:49.80423399Z"
-    description: Videomatt Users Chart
-    digest: 74f2ef2d8e5f55da3d9eba6a5fed774cc7acdaa702a1094a8439ba7250f54e18
-    name: videomatt-users
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-users-20250518-1712-58e3d19.tgz
-    version: 20250518-1712-58e3d19
   videomatt-videos:
   - apiVersion: v2
     appVersion: 20250601-1707-21a8916
@@ -373,16 +113,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250530-1832-8812286.tgz
     version: 20250530-1832-8812286
   - apiVersion: v2
-    appVersion: 20250530-1433-40646f0
-    created: "2025-06-01T17:16:49.818559438Z"
-    description: Videomatt Videos Chart
-    digest: b27b0794aad8d943bb6e48c33f5ab67c0996e13b7d35ea2e308695f7b826b377
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250530-1433-40646f0.tgz
-    version: 20250530-1433-40646f0
-  - apiVersion: v2
     appVersion: 20250526-1329-beacb2e
     created: "2025-06-01T17:16:49.81839033Z"
     description: Videomatt Videos Chart
@@ -403,26 +133,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250525-0112-af6540b.tgz
     version: 20250525-0112-af6540b
   - apiVersion: v2
-    appVersion: 20250525-0033-b58ef06
-    created: "2025-06-01T17:16:49.81801727Z"
-    description: Videomatt Videos Chart
-    digest: 7bcf8b95855180332f2841b878f7653501d9aa6d64e761691c29bbb143dd1d27
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250525-0033-b58ef06.tgz
-    version: 20250525-0033-b58ef06
-  - apiVersion: v2
-    appVersion: 20250525-0001-81f1a1b
-    created: "2025-06-01T17:16:49.817839656Z"
-    description: Videomatt Videos Chart
-    digest: c037080f3aec2e0100e70cfee5733402fb60a96fdadfa9426dc858254b238f39
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250525-0001-81f1a1b.tgz
-    version: 20250525-0001-81f1a1b
-  - apiVersion: v2
     appVersion: 20250524-1912-9e8d1c4
     created: "2025-06-01T17:16:49.817659037Z"
     description: Videomatt Videos Chart
@@ -433,116 +143,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1912-9e8d1c4.tgz
     version: 20250524-1912-9e8d1c4
   - apiVersion: v2
-    appVersion: 20250524-1855-09ddcb6
-    created: "2025-06-01T17:16:49.817485983Z"
-    description: Videomatt Videos Chart
-    digest: fb773c2b7872ee902bd583daf933eda620d956ad88a13d55f7034624a91da84c
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1855-09ddcb6.tgz
-    version: 20250524-1855-09ddcb6
-  - apiVersion: v2
-    appVersion: 20250524-1828-cff7d7a
-    created: "2025-06-01T17:16:49.817286228Z"
-    description: Videomatt Videos Chart
-    digest: 43b8b8f6093ae9e6b9855af22d6e521e94a3e571678410e0c6de24161a9886cb
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1828-cff7d7a.tgz
-    version: 20250524-1828-cff7d7a
-  - apiVersion: v2
-    appVersion: 20250524-1607-0e33986
-    created: "2025-06-01T17:16:49.817041548Z"
-    description: Videomatt Videos Chart
-    digest: 908ca21785301ddca8037b46adae022ac2df15c51d76904b4d9830cb5a442912
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1607-0e33986.tgz
-    version: 20250524-1607-0e33986
-  - apiVersion: v2
-    appVersion: 20250524-1542-7d4d72b
-    created: "2025-06-01T17:16:49.816636067Z"
-    description: Videomatt Videos Chart
-    digest: d8a8c788cf20245ff869b5f9272d2f0a82f802935a3215dd7d38fefeb437032d
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1542-7d4d72b.tgz
-    version: 20250524-1542-7d4d72b
-  - apiVersion: v2
-    appVersion: 20250524-1502-e063e08
-    created: "2025-06-01T17:16:49.816207112Z"
-    description: Videomatt Videos Chart
-    digest: 8921827270dbfda780da32796db3b6bba9f1714ee4ee9eff8944ef2bd59ae881
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1502-e063e08.tgz
-    version: 20250524-1502-e063e08
-  - apiVersion: v2
-    appVersion: 20250524-1434-48398ac
-    created: "2025-06-01T17:16:49.815859239Z"
-    description: Videomatt Videos Chart
-    digest: 554db56f186fef3ca2302a1963882abe4609190f3d36e53d1e552a8f0469f894
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1434-48398ac.tgz
-    version: 20250524-1434-48398ac
-  - apiVersion: v2
-    appVersion: 20250524-1424-b4475b8
-    created: "2025-06-01T17:16:49.815696794Z"
-    description: Videomatt Videos Chart
-    digest: 77ff778f477cb9cb8fca130251eba1d030e5fadd7e6fc6ec6645a8c5fd07dce8
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1424-b4475b8.tgz
-    version: 20250524-1424-b4475b8
-  - apiVersion: v2
-    appVersion: 20250524-1414-a093cef
-    created: "2025-06-01T17:16:49.815518129Z"
-    description: Videomatt Videos Chart
-    digest: 8201fcd42ee88d67525a06b68577b8c8d6f7c971fb88aee0a803c96f5860871c
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1414-a093cef.tgz
-    version: 20250524-1414-a093cef
-  - apiVersion: v2
-    appVersion: 20250524-1350-4a0ebeb
-    created: "2025-06-01T17:16:49.815357317Z"
-    description: Videomatt Videos Chart
-    digest: 8a90d5561ff6f56bc788f7d8c5a1825808b40d9a9d16e7d2e33e6c99c3adcff5
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1350-4a0ebeb.tgz
-    version: 20250524-1350-4a0ebeb
-  - apiVersion: v2
-    appVersion: 20250524-1333-84bc487
-    created: "2025-06-01T17:16:49.815193559Z"
-    description: Videomatt Videos Chart
-    digest: de5955024fbbca134ff9e2e27e6b2a51b3f418136a9639f9ff0062f0ddb63b6b
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1333-84bc487.tgz
-    version: 20250524-1333-84bc487
-  - apiVersion: v2
-    appVersion: 20250524-1320-78933e6
-    created: "2025-06-01T17:16:49.814976953Z"
-    description: Videomatt Videos Chart
-    digest: 0b03f44850d55fd0965a0ae7782f7c76de3532f4c1a485ed5bf9829a56f68a0b
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250524-1320-78933e6.tgz
-    version: 20250524-1320-78933e6
-  - apiVersion: v2
     appVersion: 20250523-1339-828bf6f
     created: "2025-06-01T17:16:49.814814808Z"
     description: Videomatt Videos Chart
@@ -552,16 +152,6 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250523-1339-828bf6f.tgz
     version: 20250523-1339-828bf6f
-  - apiVersion: v2
-    appVersion: 20250523-1320-6483b24
-    created: "2025-06-01T17:16:49.814648666Z"
-    description: Videomatt Videos Chart
-    digest: 45fb1c76beb5a78500db38c896600bdd4c7cd5d9221541669372f4b1af4a1b5c
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250523-1320-6483b24.tgz
-    version: 20250523-1320-6483b24
   - apiVersion: v2
     appVersion: 20250522-1159-c416c90
     created: "2025-06-01T17:16:49.814455855Z"
@@ -583,66 +173,6 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2249-6e3b51c.tgz
     version: 20250519-2249-6e3b51c
   - apiVersion: v2
-    appVersion: 20250519-2244-315c6bb
-    created: "2025-06-01T17:16:49.814115766Z"
-    description: Videomatt Videos Chart
-    digest: 9a5bed373bed90a4f07f6102afef5b6714e7fc9b9cbeba2be62fd833af1256dc
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2244-315c6bb.tgz
-    version: 20250519-2244-315c6bb
-  - apiVersion: v2
-    appVersion: 20250519-2223-e13b197
-    created: "2025-06-01T17:16:49.813919778Z"
-    description: Videomatt Videos Chart
-    digest: 9c51cfc045c0e08af3972fe45f9ec42d690d2ed1e5ddf752f0bb19a2fec1a169
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2223-e13b197.tgz
-    version: 20250519-2223-e13b197
-  - apiVersion: v2
-    appVersion: 20250519-2159-33cd7a6
-    created: "2025-06-01T17:16:49.813749238Z"
-    description: Videomatt Videos Chart
-    digest: fd505b1bc62fa874470dec185c1dc95873b23bedc7754102a67ed5bc2933196f
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2159-33cd7a6.tgz
-    version: 20250519-2159-33cd7a6
-  - apiVersion: v2
-    appVersion: 20250519-2137-664cd8a
-    created: "2025-06-01T17:16:49.813554463Z"
-    description: Videomatt Videos Chart
-    digest: 6e5bf45c93f6da8ef89dea966110ee52c79e36c1250075e130e47c517fa6f178
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2137-664cd8a.tgz
-    version: 20250519-2137-664cd8a
-  - apiVersion: v2
-    appVersion: 20250519-2111-f5c25df
-    created: "2025-06-01T17:16:49.813382901Z"
-    description: Videomatt Videos Chart
-    digest: 32c88ac8dab34b57cb71aa0e338f9fab4c6aaefe77e926b5b07c0304f66a064c
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-2111-f5c25df.tgz
-    version: 20250519-2111-f5c25df
-  - apiVersion: v2
-    appVersion: 20250519-1414-1ecccf9
-    created: "2025-06-01T17:16:49.813215366Z"
-    description: Videomatt Videos Chart
-    digest: 5701325821bf15052fbb1ab4b2d400c65b8b36d2c4cb02cd21cc4249ed89fab8
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250519-1414-1ecccf9.tgz
-    version: 20250519-1414-1ecccf9
-  - apiVersion: v2
     appVersion: 20250518-2340-34139a8
     created: "2025-06-01T17:16:49.813002527Z"
     description: Videomatt Videos Chart
@@ -652,60 +182,20 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-2340-34139a8.tgz
     version: 20250518-2340-34139a8
-  - apiVersion: v2
-    appVersion: 20250518-2310-2c31acc
-    created: "2025-06-01T17:16:49.812836024Z"
-    description: Videomatt Videos Chart
-    digest: 61265b4fae5c16ae592c21c2d431b585dba345711d703ad2d9dc5be7025031ce
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-2310-2c31acc.tgz
-    version: 20250518-2310-2c31acc
-  - apiVersion: v2
-    appVersion: 20250518-2254-d2bcf9c
-    created: "2025-06-01T17:16:49.812666967Z"
-    description: Videomatt Videos Chart
-    digest: 68b287ed40a2ac55a92a2ff4bb1a2582f2b5959a2b1f0a155e7872e32563f543
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-2254-d2bcf9c.tgz
-    version: 20250518-2254-d2bcf9c
-  - apiVersion: v2
-    appVersion: 20250518-1827-5e4f5d2
-    created: "2025-06-01T17:16:49.812501756Z"
-    description: Videomatt Videos Chart
-    digest: 26f563cc38a7dd5efcf21d8ddcbaf95eb669bee22bd97fe5567b825228420914
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-1827-5e4f5d2.tgz
-    version: 20250518-1827-5e4f5d2
-  - apiVersion: v2
-    appVersion: 20250518-1802-a5f600d
-    created: "2025-06-01T17:16:49.81232228Z"
-    description: Videomatt Videos Chart
-    digest: d25f236a044a8192cf7041f09b099ea23c4950c58b6e4870c897577d1890dfc4
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-1802-a5f600d.tgz
-    version: 20250518-1802-a5f600d
-  - apiVersion: v2
-    appVersion: 20250518-1712-58e3d19
-    created: "2025-06-01T17:16:49.811884809Z"
-    description: Videomatt Videos Chart
-    digest: ee3f8d7c017e3119c8e457eb412bdefec8bd745534a088cd5550ee36a137a7c5
-    name: videomatt-videos
-    type: application
-    urls:
-    - https://vittomatt.github.io/rpi-charts/charts/videomatt/videomatt-videos-20250518-1712-58e3d19.tgz
-    version: 20250518-1712-58e3d19
   vittomatt:
   - apiVersion: v2
+    appVersion: 20250601-1724-2c10dc0
+    created: "2025-06-01T17:33:55.292286618Z"
+    description: Vittomatt Chart
+    digest: bf7559ea81cec5eb08a40d8e0fa2caad49edb2d87116f49f2f6fdf94fea62319
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250601-1724-2c10dc0.tgz
+    version: 20250601-1724-2c10dc0
+  - apiVersion: v2
     appVersion: 20250601-0014-a099686
-    created: "2025-06-01T00:23:28.883620993Z"
+    created: "2025-06-01T17:33:55.292130004Z"
     description: Vittomatt Chart
     digest: f5709b18013ab4d35d074a06a9cceaaaf956336e22c0431f6939979907bff6e9
     name: vittomatt
@@ -715,7 +205,7 @@ entries:
     version: 20250601-0014-a099686
   - apiVersion: v2
     appVersion: 20250530-2229-870390b
-    created: "2025-06-01T00:23:28.883460693Z"
+    created: "2025-06-01T17:33:55.29196788Z"
     description: Vittomatt Chart
     digest: dd3688fbda0cab5f7a32f8c2a45b050b073f5dbbf55ec32ac3561b7e1dfe9f8c
     name: vittomatt
@@ -724,8 +214,28 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250530-2229-870390b.tgz
     version: 20250530-2229-870390b
   - apiVersion: v2
+    appVersion: 20250530-2217-2b87936
+    created: "2025-06-01T17:33:55.291797901Z"
+    description: Vittomatt Chart
+    digest: a63e07f576f9196430774aaa814646a81538220903b5787d7259a126168120aa
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250530-2217-2b87936.tgz
+    version: 20250530-2217-2b87936
+  - apiVersion: v2
+    appVersion: 20250530-2157-ddd2047
+    created: "2025-06-01T17:33:55.291624766Z"
+    description: Vittomatt Chart
+    digest: 5e583f0f6725c439e15ca653308963bf23ea9df5570fc8c2314e5ee2edae4b06
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250530-2157-ddd2047.tgz
+    version: 20250530-2157-ddd2047
+  - apiVersion: v2
     appVersion: 20250523-1336-737a240
-    created: "2025-06-01T00:23:28.882945035Z"
+    created: "2025-06-01T17:33:55.291433547Z"
     description: Vittomatt Chart
     digest: fdc27f38f51a7b86171cdbfc0f164280e8588a0e10d76e665c3cfd2fe2ec38c4
     name: vittomatt
@@ -734,8 +244,18 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250523-1336-737a240.tgz
     version: 20250523-1336-737a240
   - apiVersion: v2
+    appVersion: 20250523-1322-7b17f47
+    created: "2025-06-01T17:33:55.291267225Z"
+    description: Vittomatt Chart
+    digest: 7b229fc0341c47bdf3ec2ba2e458c725e31650248256af02da0a6ccc5ed53f02
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250523-1322-7b17f47.tgz
+    version: 20250523-1322-7b17f47
+  - apiVersion: v2
     appVersion: 20250519-0053-7080a66
-    created: "2025-06-01T00:23:28.8826169Z"
+    created: "2025-06-01T17:33:55.2910778Z"
     description: Vittomatt Chart
     digest: 26a88e23d83be2b98b9e489ec615eb8f9e4e1513bc7d86dc0c4720f051376836
     name: vittomatt
@@ -745,7 +265,7 @@ entries:
     version: 20250519-0053-7080a66
   - apiVersion: v2
     appVersion: 20250518-1805-b4a99e1
-    created: "2025-06-01T00:23:28.88244649Z"
+    created: "2025-06-01T17:33:55.290903803Z"
     description: Vittomatt Chart
     digest: 1394bdafe12ec90fb9fc9bcd6ca56dfb169b88c3009cf22388ac60cd2db2eb7b
     name: vittomatt
@@ -754,8 +274,58 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1805-b4a99e1.tgz
     version: 20250518-1805-b4a99e1
   - apiVersion: v2
+    appVersion: 20250518-1745-3d1781e
+    created: "2025-06-01T17:33:55.290722082Z"
+    description: Vittomatt Chart
+    digest: d0f1231f97af04a48481ab2bdda8a03a1fcfdf0784f147e5476734a15da4b1db
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1745-3d1781e.tgz
+    version: 20250518-1745-3d1781e
+  - apiVersion: v2
+    appVersion: 20250518-1705-e688465
+    created: "2025-06-01T17:33:55.290542165Z"
+    description: Vittomatt Chart
+    digest: 6fb6434cb61792d2971e90639dc31dcdd243e91c6e63b033810da42761380256
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1705-e688465.tgz
+    version: 20250518-1705-e688465
+  - apiVersion: v2
+    appVersion: 20250518-1653-0c475eb
+    created: "2025-06-01T17:33:55.290349082Z"
+    description: Vittomatt Chart
+    digest: fb23644b16b1cc729fcb771fb6ffbf74367c6b406c518134ebc29d0e64a8b842
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1653-0c475eb.tgz
+    version: 20250518-1653-0c475eb
+  - apiVersion: v2
+    appVersion: 20250518-1638-a367f7b
+    created: "2025-06-01T17:33:55.290183782Z"
+    description: Vittomatt Chart
+    digest: 0874ce7f61c6fff3036e0dd5946ee07d96d07819c186773e99da19f798c49a83
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1638-a367f7b.tgz
+    version: 20250518-1638-a367f7b
+  - apiVersion: v2
+    appVersion: 20250518-1559-6f883b8
+    created: "2025-06-01T17:33:55.290010367Z"
+    description: Vittomatt Chart
+    digest: 90ab761dd3b3afb541f26e5ccaeba52bb3f8e8bb45ee9e90c4a9cbc290aea7e2
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250518-1559-6f883b8.tgz
+    version: 20250518-1559-6f883b8
+  - apiVersion: v2
     appVersion: 20250517-1859-db017f2
-    created: "2025-06-01T00:23:28.880791183Z"
+    created: "2025-06-01T17:33:55.289834437Z"
     description: Vittomatt Chart
     digest: cff0f2fe6eb6803f5116ae5dc30923d30a688caa9a214271264e1c41f1fead40
     name: vittomatt
@@ -764,8 +334,28 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250517-1859-db017f2.tgz
     version: 20250517-1859-db017f2
   - apiVersion: v2
+    appVersion: 20250517-1843-81fc739
+    created: "2025-06-01T17:33:55.28967081Z"
+    description: Vittomatt Chart
+    digest: c6e7e7a78376d604f225fd46565eceb563eaf29f90497c57b1f45b4f4648d7c2
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250517-1843-81fc739.tgz
+    version: 20250517-1843-81fc739
+  - apiVersion: v2
+    appVersion: 20250517-1729-45e26a9
+    created: "2025-06-01T17:33:55.289476705Z"
+    description: Vittomatt Chart
+    digest: 0ba71f1c52a623543da48eeb77edcab195f2a21175870e2ce38ecb088eeaf6f9
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250517-1729-45e26a9.tgz
+    version: 20250517-1729-45e26a9
+  - apiVersion: v2
     appVersion: 20250425-2156-d28d61b
-    created: "2025-06-01T00:23:28.879496797Z"
+    created: "2025-06-01T17:33:55.28929815Z"
     description: Vittomatt Chart
     digest: 6dbe027cd44b0bd38555ff4f055e55ebee88c7678be12c56722f5819538a9e44
     name: vittomatt
@@ -774,8 +364,88 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-2156-d28d61b.tgz
     version: 20250425-2156-d28d61b
   - apiVersion: v2
+    appVersion: 20250425-2132-c067999
+    created: "2025-06-01T17:33:55.289110187Z"
+    description: Vittomatt Chart
+    digest: 6b41959df150b91a801971614ce418baf6efd2f7f3f6eefe45575969860bb1bc
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-2132-c067999.tgz
+    version: 20250425-2132-c067999
+  - apiVersion: v2
+    appVersion: 20250425-1756-1b1d468
+    created: "2025-06-01T17:33:55.288927515Z"
+    description: Vittomatt Chart
+    digest: 3fd60a051de7e0ba063aac5b97f2f4b3fbfd7654bfd700ac5e86ec66b971f3d0
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-1756-1b1d468.tgz
+    version: 20250425-1756-1b1d468
+  - apiVersion: v2
+    appVersion: 20250425-1732-3bd3b54
+    created: "2025-06-01T17:33:55.288735043Z"
+    description: Vittomatt Chart
+    digest: affb03a9bf82c475a3176ff4b9124989605578a858e05813a62add88e0653b5d
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-1732-3bd3b54.tgz
+    version: 20250425-1732-3bd3b54
+  - apiVersion: v2
+    appVersion: 20250425-1729-6f19323
+    created: "2025-06-01T17:33:55.28839753Z"
+    description: Vittomatt Chart
+    digest: 458038092e9f6666100bd876dc6a5e59c1ac090588621abf0b50e46b9d996674
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-1729-6f19323.tgz
+    version: 20250425-1729-6f19323
+  - apiVersion: v2
+    appVersion: 20250425-1555-2747e8b
+    created: "2025-06-01T17:33:55.287631272Z"
+    description: Vittomatt Chart
+    digest: 1ba6ab4efb9eb893fe4836cf38180ad0c0637ca4fcb030abcf80f8b0c064ee4f
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-1555-2747e8b.tgz
+    version: 20250425-1555-2747e8b
+  - apiVersion: v2
+    appVersion: 20250425-1540-fa3ed09
+    created: "2025-06-01T17:33:55.287169115Z"
+    description: Vittomatt Chart
+    digest: 48f6b86fa1c879e0674baae72211817d16a925547e4b35518128053cea19c89d
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-1540-fa3ed09.tgz
+    version: 20250425-1540-fa3ed09
+  - apiVersion: v2
+    appVersion: 20250425-0114-39dcbf3
+    created: "2025-06-01T17:33:55.286309904Z"
+    description: Vittomatt Chart
+    digest: bcf0bb039b884be2fd0456fcf94dd4e987e3d59651cbf3cf5cb85b63c2e72f9b
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-0114-39dcbf3.tgz
+    version: 20250425-0114-39dcbf3
+  - apiVersion: v2
+    appVersion: 20250425-0005-6b029f5
+    created: "2025-06-01T17:33:55.286105581Z"
+    description: Vittomatt Chart
+    digest: 71907fd022fb0e806cc276d4be5e4e91f68c0a82f83a63b7a2fd74fdbb427634
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250425-0005-6b029f5.tgz
+    version: 20250425-0005-6b029f5
+  - apiVersion: v2
     appVersion: 20250424-2334-d83f82c
-    created: "2025-06-01T00:23:28.87753627Z"
+    created: "2025-06-01T17:33:55.285893383Z"
     description: Vittomatt Chart
     digest: 077fa1300e33d53bd5b72ef7e74884256e6d56e26119731fa3afeefba3884963
     name: vittomatt
@@ -785,7 +455,7 @@ entries:
     version: 20250424-2334-d83f82c
   - apiVersion: v2
     appVersion: 20250423-0041-a95d96a
-    created: "2025-06-01T00:23:28.877326015Z"
+    created: "2025-06-01T17:33:55.285686304Z"
     description: Vittomatt Chart
     digest: a9124d7af978cb2ebc40d153dc07a2fce2b8cb651d1726d9c3de43afbeb3dd17
     name: vittomatt
@@ -794,8 +464,18 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250423-0041-a95d96a.tgz
     version: 20250423-0041-a95d96a
   - apiVersion: v2
+    appVersion: 20250423-0019-5d87236
+    created: "2025-06-01T17:33:55.285469788Z"
+    description: Vittomatt Chart
+    digest: 7e8a6954b99061ae3f3f733a690a94dbc11381c766e20a09f8e5444301714513
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250423-0019-5d87236.tgz
+    version: 20250423-0019-5d87236
+  - apiVersion: v2
     appVersion: 20250422-2044-0e132ad
-    created: "2025-06-01T00:23:28.876825066Z"
+    created: "2025-06-01T17:33:55.285266476Z"
     description: Vittomatt Chart
     digest: 94b1b9d1aadeb3ae382d2a2805b92836c2994c68d7e4a3be474a23caad73afb3
     name: vittomatt
@@ -804,8 +484,38 @@ entries:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250422-2044-0e132ad.tgz
     version: 20250422-2044-0e132ad
   - apiVersion: v2
+    appVersion: 20250422-0108-2b21da2
+    created: "2025-06-01T17:33:55.285086208Z"
+    description: Vittomatt Chart
+    digest: a832abe14e6790eedc36e205bcc9a930888530ff7626763c29a080fa165a0ec6
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250422-0108-2b21da2.tgz
+    version: 20250422-0108-2b21da2
+  - apiVersion: v2
+    appVersion: 20250422-0022-ca59fb9
+    created: "2025-06-01T17:33:55.284894168Z"
+    description: Vittomatt Chart
+    digest: 0bec1c792d11d2725af2245260ecb4f0afb3ed7886eac43910859a0ef2104a7e
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250422-0022-ca59fb9.tgz
+    version: 20250422-0022-ca59fb9
+  - apiVersion: v2
+    appVersion: 20250422-0005-1a826b6
+    created: "2025-06-01T17:33:55.284688832Z"
+    description: Vittomatt Chart
+    digest: 0d2cb45d07b5354aefbadcb51b7791c587df6eb8cd76d8ac24d16277b012460d
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250422-0005-1a826b6.tgz
+    version: 20250422-0005-1a826b6
+  - apiVersion: v2
     appVersion: 20250421-2337-a6de38c
-    created: "2025-06-01T00:23:28.87599584Z"
+    created: "2025-06-01T17:33:55.284504837Z"
     description: Vittomatt Chart
     digest: ea5995450310321122869d800ba6a99b507088e769b3f36e5644963fa5da19e7
     name: vittomatt
@@ -815,7 +525,7 @@ entries:
     version: 20250421-2337-a6de38c
   - apiVersion: v2
     appVersion: 20250420-2213-f202d55
-    created: "2025-06-01T00:23:28.875717308Z"
+    created: "2025-06-01T17:33:55.284297518Z"
     description: Vittomatt Chart
     digest: 421fc52088cf52421c4c9a2c32e39f4b0a4403de586f3c87885bb4ccce1eae6b
     name: vittomatt
@@ -823,4 +533,54 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-06-01T17:16:49.803886688Z"
+  - apiVersion: v2
+    appVersion: 20250420-2200-cb462d1
+    created: "2025-06-01T17:33:55.284079899Z"
+    description: Vittomatt Chart
+    digest: 3092c42c4685ce239496b75ce1c552c516c01df56224cfa38c6c8377e697333e
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2200-cb462d1.tgz
+    version: 20250420-2200-cb462d1
+  - apiVersion: v2
+    appVersion: 20250420-2148-82b4797
+    created: "2025-06-01T17:33:55.283847293Z"
+    description: Vittomatt Chart
+    digest: 62ac2587efffcec85c651942f5f3df61184908416d797a47fecbdd50cfd21921
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2148-82b4797.tgz
+    version: 20250420-2148-82b4797
+  - apiVersion: v2
+    appVersion: 20250420-2104-51f1017
+    created: "2025-06-01T17:33:55.283604848Z"
+    description: Vittomatt Chart
+    digest: 10e1a10240c7b05918376495500f5b0da8a97864e23f43e07e3dc019f625c0f7
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2104-51f1017.tgz
+    version: 20250420-2104-51f1017
+  - apiVersion: v2
+    appVersion: 20250420-2043-1ca6674
+    created: "2025-06-01T17:33:55.283351703Z"
+    description: Vittomatt Chart
+    digest: d4202ef72dd26915080254ba98a5df2b035b3fbb7866cd8c5ff3b87d149d6b10
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2043-1ca6674.tgz
+    version: 20250420-2043-1ca6674
+  - apiVersion: v2
+    appVersion: 20250420-2030-58d981c
+    created: "2025-06-01T17:33:55.283113225Z"
+    description: Vittomatt Chart
+    digest: 7c42df44271dd9d113d46495ae3f05e44f576997fdbcb7b2c3bfb6154209f762
+    name: vittomatt
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2030-58d981c.tgz
+    version: 20250420-2030-58d981c
+generated: "2025-06-01T17:33:55.282760944Z"

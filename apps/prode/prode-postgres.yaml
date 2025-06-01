@@ -38,7 +38,7 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: prodespace
+    namespace: vittospace
 
   syncPolicy:
     automated:

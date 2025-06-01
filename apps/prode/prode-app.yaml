@@ -12,7 +12,7 @@ spec:
     targetRevision: 20250601-2249-be5012b
   destination:
     server: https://kubernetes.default.svc
-    namespace: prodespace
+    namespace: vittospace
   syncPolicy:
     automated:
       prune: true

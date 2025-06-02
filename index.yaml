@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   prode:
   - apiVersion: v2
+    appVersion: 20250602-0101-945c28f
+    created: "2025-06-02T01:15:21.360510296Z"
+    description: Prode Chart
+    digest: 8ebc88b4e87b5e4d910063f4afeddee5d284b7e141df1aa14dfb999ce1649ae6
+    name: prode
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/prode/prode-20250602-0101-945c28f.tgz
+    version: 20250602-0101-945c28f
+  - apiVersion: v2
     appVersion: 20250602-0040-8c54f42
-    created: "2025-06-02T00:54:09.260137977Z"
+    created: "2025-06-02T01:15:21.360138032Z"
     description: Prode Chart
     digest: 9eff37a94a844177aadc25e9321521a068a1edcb6db224ab7d7bfc75fc7288db
     name: prode
@@ -13,7 +23,7 @@ entries:
     version: 20250602-0040-8c54f42
   - apiVersion: v2
     appVersion: 20250602-0025-43ea5a6
-    created: "2025-06-02T00:54:09.259832548Z"
+    created: "2025-06-02T01:15:21.359603084Z"
     description: Prode Chart
     digest: 2724c8c31b76c180fb19054cfcf9f43db029372512ad40e83b982470721e6575
     name: prode
@@ -23,7 +33,7 @@ entries:
     version: 20250602-0025-43ea5a6
   - apiVersion: v2
     appVersion: 20250601-2326-adf350e
-    created: "2025-06-02T00:54:09.259505239Z"
+    created: "2025-06-02T01:15:21.359324674Z"
     description: Prode Chart
     digest: d80dd898e44ef8cf794273e541cedde6c6dd02254a745cd3bb2dc311a4924ffa
     name: prode
@@ -33,7 +43,7 @@ entries:
     version: 20250601-2326-adf350e
   - apiVersion: v2
     appVersion: 20250601-2249-be5012b
-    created: "2025-06-02T00:54:09.259139869Z"
+    created: "2025-06-02T01:15:21.35901702Z"
     description: Prode Chart
     digest: 610ce2b1575ca76896d86fe42bc3a2ee2cdf90bf0baa11788f311ee2df13530e
     name: prode
@@ -43,7 +53,7 @@ entries:
     version: 20250601-2249-be5012b
   - apiVersion: v2
     appVersion: 20250601-2235-2ac74a7
-    created: "2025-06-02T00:54:09.258830994Z"
+    created: "2025-06-02T01:15:21.358292171Z"
     description: Prode Chart
     digest: 679cb2e7bb7e0074dc4b94b0b8afa7e21b997f4ae42660fd70ce22344ecb1301
     name: prode
@@ -364,4 +374,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-06-02T00:54:09.258348876Z"
+generated: "2025-06-02T01:15:21.358022227Z"

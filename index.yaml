@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   prode:
   - apiVersion: v2
+    appVersion: 20250603-0109-af09ab8
+    created: "2025-06-03T01:13:42.630629Z"
+    description: Prode Chart
+    digest: a7a5f74985e3bd3576f511cd0eb89a1ef4f02e7faa80bf3d263fbe43133c4059
+    name: prode
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/prode/prode-20250603-0109-af09ab8.tgz
+    version: 20250603-0109-af09ab8
+  - apiVersion: v2
     appVersion: 20250603-0052-bbbc97d
-    created: "2025-06-03T00:55:48.113142836Z"
+    created: "2025-06-03T01:13:42.630025649Z"
     description: Prode Chart
     digest: 94e08da0c769779c9a6c8fd20f83a44faf1977360a4c292639a4d73f16e92832
     name: prode
@@ -13,7 +23,7 @@ entries:
     version: 20250603-0052-bbbc97d
   - apiVersion: v2
     appVersion: 20250603-0044-16ef37c
-    created: "2025-06-03T00:55:48.112461495Z"
+    created: "2025-06-03T01:13:42.62959129Z"
     description: Prode Chart
     digest: b7589eaa8483046eec6c2a2a456943df28b1de10ce84070648048365cb766555
     name: prode
@@ -23,7 +33,7 @@ entries:
     version: 20250603-0044-16ef37c
   - apiVersion: v2
     appVersion: 20250603-0032-3972972
-    created: "2025-06-03T00:55:48.111969156Z"
+    created: "2025-06-03T01:13:42.629147743Z"
     description: Prode Chart
     digest: de6d390e9a1cb79926a01ec0058e2da94d000bd020f3213e50366e501c544a33
     name: prode
@@ -33,7 +43,7 @@ entries:
     version: 20250603-0032-3972972
   - apiVersion: v2
     appVersion: 20250603-0028-007cc83
-    created: "2025-06-03T00:55:48.11152074Z"
+    created: "2025-06-03T01:13:42.628615512Z"
     description: Prode Chart
     digest: 7d05410c410c8e5286e93ad3bfb53897c13f666e2a295ad4833c4366ab9e91b9
     name: prode
@@ -43,7 +53,7 @@ entries:
     version: 20250603-0028-007cc83
   - apiVersion: v2
     appVersion: 20250603-0010-cb6e122
-    created: "2025-06-03T00:55:48.110804411Z"
+    created: "2025-06-03T01:13:42.628214725Z"
     description: Prode Chart
     digest: edfd1b9de403539c27e9769c46c4bb5ed3ea9095d68f6596af12f4eaec648f4c
     name: prode
@@ -53,7 +63,7 @@ entries:
     version: 20250603-0010-cb6e122
   - apiVersion: v2
     appVersion: 20250602-2358-b9e0c95
-    created: "2025-06-03T00:55:48.110575724Z"
+    created: "2025-06-03T01:13:42.627987672Z"
     description: Prode Chart
     digest: cb39623d40ee260d9715c0eb0eaa8949a5233bac2380e2cd91642e02d56d398b
     name: prode
@@ -63,7 +73,7 @@ entries:
     version: 20250602-2358-b9e0c95
   - apiVersion: v2
     appVersion: 20250602-2343-97bb77c
-    created: "2025-06-03T00:55:48.110346637Z"
+    created: "2025-06-03T01:13:42.627790014Z"
     description: Prode Chart
     digest: ffe0b7f7b745b47c9c20178d0f5374cd4a445739bc6c0d83eac72642501e1fd4
     name: prode
@@ -73,7 +83,7 @@ entries:
     version: 20250602-2343-97bb77c
   - apiVersion: v2
     appVersion: 20250602-2314-a6eddcf
-    created: "2025-06-03T00:55:48.11012291Z"
+    created: "2025-06-03T01:13:42.627592285Z"
     description: Prode Chart
     digest: 0a457d0a6088f646b9f46738c365cfdfe99fcc4eacce4fc79762ae860605f10e
     name: prode
@@ -83,7 +93,7 @@ entries:
     version: 20250602-2314-a6eddcf
   - apiVersion: v2
     appVersion: 20250602-2257-f5c49f1
-    created: "2025-06-03T00:55:48.109917927Z"
+    created: "2025-06-03T01:13:42.627398133Z"
     description: Prode Chart
     digest: f9ac8670d4cd1ad22cc2bbfd584e426799aefdc6e998fd97f8d07f706c62a2f2
     name: prode
@@ -93,7 +103,7 @@ entries:
     version: 20250602-2257-f5c49f1
   - apiVersion: v2
     appVersion: 20250602-2142-bde4111
-    created: "2025-06-03T00:55:48.109681135Z"
+    created: "2025-06-03T01:13:42.627179967Z"
     description: Prode Chart
     digest: 0fc61ff3fd95cb483aa86cdc53dc2fba893a978455487c1fd6779abb8e770d97
     name: prode
@@ -103,7 +113,7 @@ entries:
     version: 20250602-2142-bde4111
   - apiVersion: v2
     appVersion: 20250602-2127-81cad40
-    created: "2025-06-03T00:55:48.109465072Z"
+    created: "2025-06-03T01:13:42.626953094Z"
     description: Prode Chart
     digest: 554d166e9342cf497fba4c7185d1e0f41fd430c77f727d40dd731f6d4096597f
     name: prode
@@ -113,7 +123,7 @@ entries:
     version: 20250602-2127-81cad40
   - apiVersion: v2
     appVersion: 20250602-2115-f7877c7
-    created: "2025-06-03T00:55:48.109239331Z"
+    created: "2025-06-03T01:13:42.626742442Z"
     description: Prode Chart
     digest: dfd1f3f40b4911084256126acf09427f399dd1f69b23fee5bc604f73ff4f323a
     name: prode
@@ -123,7 +133,7 @@ entries:
     version: 20250602-2115-f7877c7
   - apiVersion: v2
     appVersion: 20250602-2059-46b89c9
-    created: "2025-06-03T00:55:48.108990567Z"
+    created: "2025-06-03T01:13:42.626529064Z"
     description: Prode Chart
     digest: c2ba67cf84a116471e34f4ae71fe6b34cfed17f736e69c4771bf56a047bfaaca
     name: prode
@@ -133,7 +143,7 @@ entries:
     version: 20250602-2059-46b89c9
   - apiVersion: v2
     appVersion: 20250602-2003-f8e6253
-    created: "2025-06-03T00:55:48.108813096Z"
+    created: "2025-06-03T01:13:42.626355401Z"
     description: Prode Chart
     digest: 047b02a206565bad61a3406471e603c51311ea86648ec69ea87d8f40e50308eb
     name: prode
@@ -143,7 +153,7 @@ entries:
     version: 20250602-2003-f8e6253
   - apiVersion: v2
     appVersion: 20250602-2003-34d21c3
-    created: "2025-06-03T00:55:48.108634703Z"
+    created: "2025-06-03T01:13:42.626203437Z"
     description: Prode Chart
     digest: b6755dfadf994cd9c66cfa8756ad348d2e3501f3784f74f4d0466be84f0a452d
     name: prode
@@ -153,7 +163,7 @@ entries:
     version: 20250602-2003-34d21c3
   - apiVersion: v2
     appVersion: 20250602-2002-df831d2
-    created: "2025-06-03T00:55:48.108483211Z"
+    created: "2025-06-03T01:13:42.626053157Z"
     description: Prode Chart
     digest: 4a1e9fc6e1dd650bf445808b2c7cd5e35ec7cac83d80a2d5f9afaeffc4b87c42
     name: prode
@@ -163,7 +173,7 @@ entries:
     version: 20250602-2002-df831d2
   - apiVersion: v2
     appVersion: 20250602-1958-b5f9c73
-    created: "2025-06-03T00:55:48.10831158Z"
+    created: "2025-06-03T01:13:42.625888841Z"
     description: Prode Chart
     digest: e8fa5e62c03149a644d83af4526835baac1ace5a4f4ed52195a5a18a89fe3816
     name: prode
@@ -173,7 +183,7 @@ entries:
     version: 20250602-1958-b5f9c73
   - apiVersion: v2
     appVersion: 20250602-1955-c668888
-    created: "2025-06-03T00:55:48.108154708Z"
+    created: "2025-06-03T01:13:42.625718193Z"
     description: Prode Chart
     digest: 38d5a41032fac70822d8535c3428042839e9961e5814b798dc442f8bf61c99d9
     name: prode
@@ -183,7 +193,7 @@ entries:
     version: 20250602-1955-c668888
   - apiVersion: v2
     appVersion: 20250602-1448-b834545
-    created: "2025-06-03T00:55:48.107983348Z"
+    created: "2025-06-03T01:13:42.625564106Z"
     description: Prode Chart
     digest: 059115a357e06ad408056e848775e8ecffe33f8017f6aebc0967e9f8f1e63e3d
     name: prode
@@ -193,7 +203,7 @@ entries:
     version: 20250602-1448-b834545
   - apiVersion: v2
     appVersion: 20250602-1437-5f92a33
-    created: "2025-06-03T00:55:48.107803212Z"
+    created: "2025-06-03T01:13:42.625390923Z"
     description: Prode Chart
     digest: da1eafab0d4813def59f81bf8c670beb5e99d3e3deaeed81796076cc75d27e40
     name: prode
@@ -203,7 +213,7 @@ entries:
     version: 20250602-1437-5f92a33
   - apiVersion: v2
     appVersion: 20250602-0222-dba70ce
-    created: "2025-06-03T00:55:48.107594543Z"
+    created: "2025-06-03T01:13:42.625218722Z"
     description: Prode Chart
     digest: 9e93231a4ad7c971ed6abacc4936918128698bddb2245f113ca66ce3220f0cf0
     name: prode
@@ -213,7 +223,7 @@ entries:
     version: 20250602-0222-dba70ce
   - apiVersion: v2
     appVersion: 20250602-0153-09c020d
-    created: "2025-06-03T00:55:48.107436638Z"
+    created: "2025-06-03T01:13:42.625001438Z"
     description: Prode Chart
     digest: 1605164ca835c95c1596dd7253227a39d232dd7f042ff4ac3261be37b88769e8
     name: prode
@@ -223,7 +233,7 @@ entries:
     version: 20250602-0153-09c020d
   - apiVersion: v2
     appVersion: 20250602-0136-411aaf9
-    created: "2025-06-03T00:55:48.107241274Z"
+    created: "2025-06-03T01:13:42.624847551Z"
     description: Prode Chart
     digest: f4748437d9d7870feb20c6f9c9b93e57eb14c4cbcefb860b67070f5435768496
     name: prode
@@ -233,7 +243,7 @@ entries:
     version: 20250602-0136-411aaf9
   - apiVersion: v2
     appVersion: 20250602-0116-d29a5e6
-    created: "2025-06-03T00:55:48.107069253Z"
+    created: "2025-06-03T01:13:42.624693804Z"
     description: Prode Chart
     digest: af9912bcd183a8568e7ad7ddac74256d3b2957f07847975bcfd85adf981200d0
     name: prode
@@ -243,7 +253,7 @@ entries:
     version: 20250602-0116-d29a5e6
   - apiVersion: v2
     appVersion: 20250602-0101-945c28f
-    created: "2025-06-03T00:55:48.106893585Z"
+    created: "2025-06-03T01:13:42.624525892Z"
     description: Prode Chart
     digest: 8ebc88b4e87b5e4d910063f4afeddee5d284b7e141df1aa14dfb999ce1649ae6
     name: prode
@@ -253,7 +263,7 @@ entries:
     version: 20250602-0101-945c28f
   - apiVersion: v2
     appVersion: 20250602-0040-8c54f42
-    created: "2025-06-03T00:55:48.10666022Z"
+    created: "2025-06-03T01:13:42.62426717Z"
     description: Prode Chart
     digest: 9eff37a94a844177aadc25e9321521a068a1edcb6db224ab7d7bfc75fc7288db
     name: prode
@@ -263,7 +273,7 @@ entries:
     version: 20250602-0040-8c54f42
   - apiVersion: v2
     appVersion: 20250602-0025-43ea5a6
-    created: "2025-06-03T00:55:48.105947403Z"
+    created: "2025-06-03T01:13:42.623589403Z"
     description: Prode Chart
     digest: 2724c8c31b76c180fb19054cfcf9f43db029372512ad40e83b982470721e6575
     name: prode
@@ -273,7 +283,7 @@ entries:
     version: 20250602-0025-43ea5a6
   - apiVersion: v2
     appVersion: 20250601-2326-adf350e
-    created: "2025-06-03T00:55:48.105665347Z"
+    created: "2025-06-03T01:13:42.623294113Z"
     description: Prode Chart
     digest: d80dd898e44ef8cf794273e541cedde6c6dd02254a745cd3bb2dc311a4924ffa
     name: prode
@@ -283,7 +293,7 @@ entries:
     version: 20250601-2326-adf350e
   - apiVersion: v2
     appVersion: 20250601-2249-be5012b
-    created: "2025-06-03T00:55:48.105353996Z"
+    created: "2025-06-03T01:13:42.622937399Z"
     description: Prode Chart
     digest: 610ce2b1575ca76896d86fe42bc3a2ee2cdf90bf0baa11788f311ee2df13530e
     name: prode
@@ -293,7 +303,7 @@ entries:
     version: 20250601-2249-be5012b
   - apiVersion: v2
     appVersion: 20250601-2235-2ac74a7
-    created: "2025-06-03T00:55:48.104490452Z"
+    created: "2025-06-03T01:13:42.622205919Z"
     description: Prode Chart
     digest: 679cb2e7bb7e0074dc4b94b0b8afa7e21b997f4ae42660fd70ce22344ecb1301
     name: prode
@@ -614,4 +624,4 @@ entries:
     urls:
     - https://vittomatt.github.io/rpi-charts/charts/vittomatt/vittomatt-20250420-2213-f202d55.tgz
     version: 20250420-2213-f202d55
-generated: "2025-06-03T00:55:48.104168812Z"
+generated: "2025-06-03T01:13:42.621910318Z"

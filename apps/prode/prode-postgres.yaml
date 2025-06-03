@@ -28,6 +28,10 @@ spec:
             userPasswordKey: PRODE_POSTGRES_DB_PASSWORD
 
         primary:
+          service:
+            type: NodePort
+            nodePorts:
+              postgresql: "30009"
           persistence:
             enabled: true
           persistentVolumeClaimRetentionPolicy:

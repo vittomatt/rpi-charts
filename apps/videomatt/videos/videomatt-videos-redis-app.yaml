@@ -1,44 +1,44 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: videomatt-videos-redis
-  namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "-1"
-spec:
-  project: default
-  source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: redis
-    targetRevision: 19.5.0
-    helm:
-      releaseName: videomatt-videos-redis
-      values: |-
-        architecture: standalone
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: videomatt-videos-redis
+#   namespace: argocd
+#   annotations:
+#     argocd.argoproj.io/sync-wave: "-1"
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://charts.bitnami.com/bitnami
+#     chart: redis
+#     targetRevision: 19.5.0
+#     helm:
+#       releaseName: videomatt-videos-redis
+#       values: |-
+#         architecture: standalone
 
-        auth:
-          enabled: true
-          existingSecret: videomatt-videos-secret
-          existingSecretPasswordKey: REDIS_PASSWORD
-          acl:
-            enabled: true
+#         auth:
+#           enabled: true
+#           existingSecret: videomatt-videos-secret
+#           existingSecretPasswordKey: REDIS_PASSWORD
+#           acl:
+#             enabled: true
 
-        master:
-          persistence:
-            enabled: true
-            size: 1Gi
-            storageClass: ""
-          podAnnotations:
-            linkerd.io/inject: "disabled"
+#         master:
+#           persistence:
+#             enabled: true
+#             size: 1Gi
+#             storageClass: ""
+#           podAnnotations:
+#             linkerd.io/inject: "disabled"
 
-        service:
-          port: 6379
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+#         service:
+#           port: 6379
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: vittospace
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true

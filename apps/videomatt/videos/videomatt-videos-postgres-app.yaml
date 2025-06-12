@@ -1,58 +1,58 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: videomatt-videos-postgres
-  namespace: argocd
-spec:
-  project: default
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: videomatt-videos-postgres
+#   namespace: argocd
+# spec:
+#   project: default
 
-  source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: postgresql
-    targetRevision: 13.2.30
-    helm:
-      releaseName: videomatt-videos-postgres
-      values: |
-        image:
-          repository: bitnami/postgresql
-          tag: 16.6.0-debian-12-r2
+#   source:
+#     repoURL: https://charts.bitnami.com/bitnami
+#     chart: postgresql
+#     targetRevision: 13.2.30
+#     helm:
+#       releaseName: videomatt-videos-postgres
+#       values: |
+#         image:
+#           repository: bitnami/postgresql
+#           tag: 16.6.0-debian-12-r2
 
-        architecture: replication
+#         architecture: replication
 
-        auth:
-          database: videos
-          username: videomatt
-          replicationUsername: videomatt-replica
+#         auth:
+#           database: videos
+#           username: videomatt
+#           replicationUsername: videomatt-replica
 
-          existingSecret: videomatt-videos-secret
-          secretKeys:
-            adminPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
-            userPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
-            replicationPasswordKey: VIDEOS_POSTGRES_DB_REPLICA_PASSWORD
+#           existingSecret: videomatt-videos-secret
+#           secretKeys:
+#             adminPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+#             userPasswordKey: VIDEOS_POSTGRES_DB_PASSWORD
+#             replicationPasswordKey: VIDEOS_POSTGRES_DB_REPLICA_PASSWORD
 
-        primary:
-          persistence:
-            enabled: false
-          persistentVolumeClaimRetentionPolicy:
-            whenDeleted: Retain
+#         primary:
+#           persistence:
+#             enabled: false
+#           persistentVolumeClaimRetentionPolicy:
+#             whenDeleted: Retain
 
-        readReplicas:
-          replicaCount: 1
-          persistence:
-            enabled: false
-          persistentVolumeClaimRetentionPolicy:
-            whenDeleted: Retain
+#         readReplicas:
+#           replicaCount: 1
+#           persistence:
+#             enabled: false
+#           persistentVolumeClaimRetentionPolicy:
+#             whenDeleted: Retain
 
-        volumePermissions:
-          enabled: true
+#         volumePermissions:
+#           enabled: true
 
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: vittospace
 
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true

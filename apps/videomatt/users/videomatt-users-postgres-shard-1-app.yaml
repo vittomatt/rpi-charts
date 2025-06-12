@@ -1,47 +1,47 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: videomatt-users-postgres-shard-1
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: postgresql
-    targetRevision: 13.2.25
-    helm:
-      releaseName: videomatt-users-postgres-shard-1
-      values: |-
-        auth:
-          existingSecret: videomatt-users-secret
-          secretKeys:
-            adminPasswordKey: USERS_POSTGRES_DB_SHARD_1_PASSWORD
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: videomatt-users-postgres-shard-1
+#   namespace: argocd
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://charts.bitnami.com/bitnami
+#     chart: postgresql
+#     targetRevision: 13.2.25
+#     helm:
+#       releaseName: videomatt-users-postgres-shard-1
+#       values: |-
+#         auth:
+#           existingSecret: videomatt-users-secret
+#           secretKeys:
+#             adminPasswordKey: USERS_POSTGRES_DB_SHARD_1_PASSWORD
 
-        primary:
-          extraEnvVars:
-            - name: POSTGRES_USER
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-users-secret
-                  key: USERS_POSTGRES_DB_SHARD_1_USER
-            - name: POSTGRES_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: videomatt-users-secret
-                  key: USERS_POSTGRES_DB_SHARD_1_NAME
+#         primary:
+#           extraEnvVars:
+#             - name: POSTGRES_USER
+#               valueFrom:
+#                 secretKeyRef:
+#                   name: videomatt-users-secret
+#                   key: USERS_POSTGRES_DB_SHARD_1_USER
+#             - name: POSTGRES_DATABASE
+#               valueFrom:
+#                 secretKeyRef:
+#                   name: videomatt-users-secret
+#                   key: USERS_POSTGRES_DB_SHARD_1_NAME
 
-          persistence:
-            enabled: true
-            size: 1Gi
-            storageClass: ""
-          podAnnotations:
-            linkerd.io/inject: "disabled"
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+#           persistence:
+#             enabled: true
+#             size: 1Gi
+#             storageClass: ""
+#           podAnnotations:
+#             linkerd.io/inject: "disabled"
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: vittospace
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true

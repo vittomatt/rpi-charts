@@ -1,49 +1,49 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: linkerd-grafana
-  namespace: argocd
-spec:
-  project: default
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: linkerd-viz
-  source:
-    repoURL: https://grafana.github.io/helm-charts
-    chart: grafana
-    targetRevision: 8.12.1
-    helm:
-      values: |
-        replicaCount: 1
-        persistence:
-          enabled: false
-        admin:
-          existingSecret: grafana-credentials
-        service:
-          type: NodePort
-          nodePort: 32000
-        resources:
-          requests:
-            cpu: 50m
-            memory: 128Mi
-          limits:
-            cpu: 200m
-            memory: 256Mi
-        datasources:
-          datasources.yaml:
-            apiVersion: 1
-            datasources:
-              - name: Prometheus
-                type: prometheus
-                access: proxy
-                url: http://prometheus.linkerd-viz:9090
-                isDefault: true
-        sidecar:
-          dashboards:
-            enabled: false
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: linkerd-grafana
+#   namespace: argocd
+# spec:
+#   project: default
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: linkerd-viz
+#   source:
+#     repoURL: https://grafana.github.io/helm-charts
+#     chart: grafana
+#     targetRevision: 8.12.1
+#     helm:
+#       values: |
+#         replicaCount: 1
+#         persistence:
+#           enabled: false
+#         admin:
+#           existingSecret: grafana-credentials
+#         service:
+#           type: NodePort
+#           nodePort: 32000
+#         resources:
+#           requests:
+#             cpu: 50m
+#             memory: 128Mi
+#           limits:
+#             cpu: 200m
+#             memory: 256Mi
+#         datasources:
+#           datasources.yaml:
+#             apiVersion: 1
+#             datasources:
+#               - name: Prometheus
+#                 type: prometheus
+#                 access: proxy
+#                 url: http://prometheus.linkerd-viz:9090
+#                 isDefault: true
+#         sidecar:
+#           dashboards:
+#             enabled: false
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true

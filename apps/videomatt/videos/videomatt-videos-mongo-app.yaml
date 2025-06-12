@@ -1,23 +1,23 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: videomatt-videos-mongo
-  namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "-1"
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/vittomatt/rpi-charts
-    targetRevision: HEAD
-    path: mongo
-    kustomize: {}
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: videomatt-videos-mongo
+#   namespace: argocd
+#   annotations:
+#     argocd.argoproj.io/sync-wave: "-1"
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://github.com/vittomatt/rpi-charts
+#     targetRevision: HEAD
+#     path: mongo
+#     kustomize: {}
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: vittospace
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true

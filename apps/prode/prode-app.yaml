@@ -1,19 +1,19 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: prode-app
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://vittomatt.github.io/rpi-charts
-    chart: prode
-    # Auto updated by ci
-    targetRevision: 20250613-0253-d046f53
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: vittospace
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: prode-app
+#   namespace: argocd
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://vittomatt.github.io/rpi-charts
+#     chart: prode
+#     # Auto updated by ci
+#     targetRevision: 20250613-0253-d046f53
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: vittospace
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       # selfHeal: true

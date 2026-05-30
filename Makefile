@@ -7,9 +7,12 @@ DB_URL    := $(shell $(KUBECTL) get secret prode-secret -n $(NAMESPACE) -o jsonp
 APP_IMAGE := $(shell $(KUBECTL) get deployment prode-deployment -n $(NAMESPACE) -o jsonpath='{.spec.template.spec.containers[0].image}' 2>/dev/null)
 
 .DEFAULT_GOAL := help
-.PHONY: help init-db seed reset status db-shell backup restore list-backups
+.PHONY: help init-db seed reset status db-shell backup restore list-backups seal
 
 help:
+	@echo ""
+	@echo "Secrets (correr desde la Mac):"
+	@echo "  make seal KEY=MI_VAR VALUE=mi_valor  Sella una var y la agrega al SealedSecret"
 	@echo ""
 	@echo "DB:"
 	@echo "  make init-db              Borra todos los datos y corre las migraciones de Prisma"
@@ -94,6 +97,28 @@ status:
 	@echo ""
 	@echo "=== ArgoCD apps ==="
 	@$(KUBECTL) get application -n argocd | grep -E "NAME|prode"
+
+# Sella una nueva variable de entorno y la mergea al SealedSecret de prode.
+# Requiere kubeseal (brew install kubeseal). Correr desde la Mac.
+# Uso: make seal KEY=MI_API_KEY VALUE=mi_valor_secreto
+seal:
+	@test -n "$(KEY)"   || { echo "ERROR: Uso: make seal KEY=MI_VAR VALUE=mi_valor"; exit 1; }
+	@test -n "$(VALUE)" || { echo "ERROR: Uso: make seal KEY=MI_VAR VALUE=mi_valor"; exit 1; }
+	@command -v kubeseal >/dev/null || { echo "ERROR: falta kubeseal → brew install kubeseal"; exit 1; }
+	@echo "→ Bajando cert del sealed-secrets controller..."
+	@ssh rpi 'sudo k3s kubectl get secret -n sealed-secrets \
+		-l sealedsecrets.bitnami.com/sealed-secrets-key \
+		-o jsonpath="{.items[0].data.tls\.crt}" | base64 -d' > /tmp/ss-cert.pem
+	@echo "→ Sellando $(KEY)..."
+	@printf 'apiVersion: v1\nkind: Secret\nmetadata:\n  name: prode-secret\n  namespace: vittospace\ntype: Opaque\nstringData:\n  %s: "%s"\n' \
+		"$(KEY)" "$(VALUE)" \
+		| kubeseal --cert /tmp/ss-cert.pem --format yaml \
+		--merge-into secrets/prode/prode-sealed-secret.yaml
+	@echo "✓ $(KEY) sellado en secrets/prode/prode-sealed-secret.yaml"
+	@echo ""
+	@echo "  Próximos pasos:"
+	@echo "  1. Si es una var del deployment/cronjob, agregarla en deploy/templates/"
+	@echo "  2. git add secrets/prode/prode-sealed-secret.yaml && git commit -m 'seal: add $(KEY)' && git push"
 
 # Shell psql directo contra la DB
 db-shell:

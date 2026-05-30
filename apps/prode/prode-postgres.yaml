@@ -7,38 +7,10 @@ spec:
   project: default
 
   source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: postgresql
-    targetRevision: 13.2.30
-    helm:
-      releaseName: prode-postgres
-      values: |
-        image:
-          repository: bitnami/postgresql
-          tag: 16.6.0-debian-12-r2
-
-        architecture: standalone
-
-        auth:
-          database: prode
-          username: prode
-          existingSecret: prode-secret
-          secretKeys:
-            adminPasswordKey: PRODE_POSTGRES_DB_PASSWORD
-            userPasswordKey: PRODE_POSTGRES_DB_PASSWORD
-
-        primary:
-          service:
-            type: NodePort
-            nodePorts:
-              postgresql: "30009"
-          persistence:
-            enabled: true
-          persistentVolumeClaimRetentionPolicy:
-            whenDeleted: Retain
-
-        volumePermissions:
-          enabled: true
+    repoURL: "https://github.com/vittomatt/rpi-charts"
+    targetRevision: HEAD
+    path: prode-db
+    kustomize: {}
 
   destination:
     server: https://kubernetes.default.svc

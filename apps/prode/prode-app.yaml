@@ -9,7 +9,7 @@ spec:
     repoURL: https://vittomatt.github.io/rpi-charts
     chart: prode
     # Auto updated by ci
-    targetRevision: 20260530-2159-21a9383
+    targetRevision: 20260530-2229-ccfa1bc
   destination:
     server: https://kubernetes.default.svc
     namespace: vittospace

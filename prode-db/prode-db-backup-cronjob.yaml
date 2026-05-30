@@ -1,0 +1,43 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: prode-db-backup
+  namespace: vittospace
+spec:
+  schedule: "0 8 * * *"
+  timeZone: "America/Argentina/Buenos_Aires"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: pg-backup
+              image: postgres:16-alpine
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: PGPASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: prode-secret
+                      key: PRODE_POSTGRES_DB_PASSWORD
+                - name: TZ
+                  value: America/Argentina/Buenos_Aires
+              command:
+                - sh
+                - -c
+                - |
+                  f="prode_$(date +%F_%H%M).sql"
+                  pg_dump -h prode-postgres-postgresql -U postgres -d postgres -f "/backups/$f"
+                  echo "backup OK: $f"
+              volumeMounts:
+                - name: backups
+                  mountPath: /backups
+          volumes:
+            - name: backups
+              hostPath:
+                path: /home/vittomatt/rpi-charts/backups
+                type: DirectoryOrCreate

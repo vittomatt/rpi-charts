@@ -4,3 +4,4 @@ namespace: vittospace
 resources:
   - prode-db-statefulset.yaml
   - prode-db-service.yaml
+  - prode-db-backup-cronjob.yaml

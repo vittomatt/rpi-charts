@@ -24,10 +24,17 @@ spec:
             - app:prode
             - env:production
             - cluster:prode-rpi
+          collectEvents: false
+          containerExcludeLogs: "name:.*"
+          containerIncludeLogs: "name:prode-container name:postgres name:sealed-secrets"
+          containerExcludeMetrics: "name:.*"
+          containerIncludeMetrics: "name:prode-container name:postgres name:sealed-secrets"
           clusterChecks:
-            enabled: true
+            enabled: false
+          kubeStateMetricsCore:
+            enabled: false
           orchestratorExplorer:
-            enabled: true
+            enabled: false
           logs:
             enabled: true
             containerCollectAll: true
@@ -40,6 +47,9 @@ spec:
               enabled: true
               targets:
                 - name: prode
+                  podSelector:
+                    matchLabels:
+                      app: prode
                   namespaceSelector:
                     matchNames:
                       - vittospace

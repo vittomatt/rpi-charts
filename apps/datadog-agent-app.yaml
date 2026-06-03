@@ -1,0 +1,114 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: datadog-agent
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
+spec:
+  project: default
+  source:
+    repoURL: https://helm.datadoghq.com
+    chart: datadog
+    targetRevision: 3.217.2
+    helm:
+      releaseName: datadog-agent
+      values: |-
+        targetSystem: linux
+        
+        datadog:
+          site: datadoghq.com
+          clusterName: prode-rpi
+          apiKeyExistingSecret: datadog-secret
+          tags:
+            - app:prode
+            - env:production
+            - cluster:prode-rpi
+          clusterChecks:
+            enabled: true
+          orchestratorExplorer:
+            enabled: true
+          logs:
+            enabled: true
+            containerCollectAll: true
+          ignoreAutoConfig:
+            - redisdb
+          apm:
+            portEnabled: true
+            port: 8126
+            instrumentation:
+              enabled: true
+              targets:
+                - name: prode
+                  namespaceSelector:
+                    matchNames:
+                      - vittospace
+                  ddTraceVersions:
+                    js: "5"
+          discovery:
+            enabled: false
+          processAgent:
+            enabled: true
+            processCollection: false
+            containerCollection: true
+          networkMonitoring:
+            enabled: false
+          serviceMonitoring:
+            enabled: false
+          securityAgent:
+            compliance:
+              enabled: false
+              host_benchmarks:
+                enabled: false
+            runtime:
+              enabled: false
+          containerImageCollection:
+            enabled: false
+          containerLifecycle:
+            enabled: false
+          autoscaling:
+            workload:
+              enabled: false
+          operator:
+            enabled: false
+          kubelet:
+            tlsVerify: false
+        
+        agents:
+          containers:
+            agent:
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 128Mi
+                limits:
+                  memory: 256Mi
+            traceAgent:
+              resources:
+                requests:
+                  cpu: 25m
+                  memory: 96Mi
+                limits:
+                  memory: 192Mi
+        
+        clusterAgent:
+          enabled: true
+          resources:
+            requests:
+              cpu: 50m
+              memory: 128Mi
+            limits:
+              memory: 256Mi
+          metricsProvider:
+            useDatadogMetrics: false
+          admissionController:
+            enabled: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: datadog
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

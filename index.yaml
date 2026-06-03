@@ -3,6 +3,16 @@ entries:
   prode:
   - apiVersion: v2
     appVersion: 20260603-1728-81dce92
+    created: "2026-06-03T18:00:07Z"
+    description: Prode Chart
+    digest: e2f66f7d6ebe44ab3d50693ba3b225dc6dbe73f840ceb41f2811995771874d02
+    name: prode
+    type: application
+    urls:
+    - https://vittomatt.github.io/rpi-charts/charts/prode/prode-20260603-1805-ddogfix.tgz
+    version: 20260603-1805-ddogfix
+  - apiVersion: v2
+    appVersion: 20260603-1728-81dce92
     created: "2026-06-03T17:34:26.461839096Z"
     dependencies:
     - name: datadog

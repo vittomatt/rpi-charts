@@ -117,8 +117,5 @@ spec:
     server: https://kubernetes.default.svc
     namespace: datadog
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
     syncOptions:
       - CreateNamespace=true
